@@ -1,0 +1,26 @@
+{
+  "name": "grid-intelligence-mcp",
+  "version": "0.1.0",
+  "description": "MCP server for power grid predictive maintenance — fuses asset sensor data, weather forecasts, and incident history to rank at-risk equipment and generate crew plans.",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "tsc && node --test build/tests/**/*.test.js",
+    "web": "tsc && node build/server.js"
+  },
+  "bin": {
+    "grid-intelligence-mcp": "./build/index.js"
+  },
+  "files": ["build"],
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "express": "^5.2.1",
+    "cors": "^2.8.5",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.5.0"
+  }
+}

@@ -83,7 +83,8 @@ demo/*.avi
 demo/*.mkv
 
 # ── Docker volumes / local data ───────────────────────────────────────────────
-data/
+# data/ - commented out; src/data/grid_store.json must be tracked
+!src/data/
 logs/
 *.log
 
