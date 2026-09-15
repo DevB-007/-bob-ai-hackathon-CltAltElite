@@ -10,8 +10,8 @@
 |---|---|
 | **Team Name** | CltAltElite |
 | **Track** | Sustainability |
-| **Team Lead** | Divyarajsinh — dbparmar2007@gmail.com |
-| **Members** | Divyarajsinh (dbparmar2007@gmail.com) |
+| **Team Lead** | Bumtariya Dev Dilipkumar (25ce009@charusat.edu.in) |
+| **Members** | Divyarajsinh (25ce068@charusat.edu.in), Sahil Manoj Pardhi (25ce067@charusat.edu.in) , Tirth Rigeshkumar Darji (25ce020@charusat.edu.in) |
 
 ---
 
