@@ -4,8 +4,12 @@ let allWeather = [];
 let activePlan = null;
 
 // ─── Startup ──────────────────────────────────────────────────────────────────
+let pollInterval = null;
+
 document.addEventListener("DOMContentLoaded", () => {
   loadAllData();
+  pollInterval = setInterval(loadAllData, 3000);
+  fetchSimulatorStatus();
 });
 
 async function loadAllData() {
@@ -20,6 +24,53 @@ async function loadAllData() {
     console.error("Failed to load initial data:", err);
   }
 }
+
+// ─── Live Simulator Controls ───────────────────────────────────────────────────
+
+async function fetchSimulatorStatus() {
+  try {
+    const res = await fetch("/api/simulator/status");
+    const data = await res.json();
+    document.getElementById("sim-status-label").innerText = data.isRunning ? "RUNNING" : "STOPPED";
+    document.getElementById("sim-weather-label").innerText = data.currentPreset;
+    
+    if (data.isRunning) {
+      document.getElementById("sim-start-btn").style.opacity = 0.5;
+      document.getElementById("sim-stop-btn").style.opacity = 1;
+    } else {
+      document.getElementById("sim-start-btn").style.opacity = 1;
+      document.getElementById("sim-stop-btn").style.opacity = 0.5;
+    }
+  } catch (err) {
+    console.error("Failed to fetch simulator status:", err);
+  }
+}
+
+window.controlSimulator = async function(action) {
+  try {
+    await fetch("/api/simulator/control", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ action })
+    });
+    fetchSimulatorStatus();
+  } catch (err) {
+    console.error("Failed to control simulator:", err);
+  }
+};
+
+window.setSimulatorPreset = async function(preset) {
+  try {
+    await fetch("/api/simulator/control", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ action: "preset", preset })
+    });
+    fetchSimulatorStatus();
+  } catch (err) {
+    console.error("Failed to set simulator preset:", err);
+  }
+};
 
 // ─── KPI Ribbon ───────────────────────────────────────────────────────────────
 async function fetchKpis() {
@@ -289,6 +340,8 @@ async function openAssetModal(assetId) {
     tBody.innerHTML = `<tr><td colspan="4">No telemetry available</td></tr>`;
   } else {
     const params = [
+      { name: "Live Voltage", val: `${reading.voltage_v || "N/A"} V`, limit: "Rated ± 5%", status: "NORMAL" },
+      { name: "Live Current", val: `${reading.current_a || "N/A"} A`, limit: "Max continuous", status: "NORMAL" },
       { name: "Winding / Top Oil Temperature", val: `${reading.temperature_c} °C`, limit: "Alarm: 85°C | Danger: 98°C", status: reading.temperature_c > 98 ? "DANGER" : reading.temperature_c > 85 ? "ALARM" : "NORMAL" },
       { name: "RMS Vibration Velocity", val: `${reading.vibration_mm_s} mm/s`, limit: "Alarm: 7.1 | Danger: 11.2", status: reading.vibration_mm_s > 11.2 ? "DANGER" : reading.vibration_mm_s > 7.1 ? "ALARM" : "NORMAL" },
       { name: "Partial Discharge (PD)", val: `${reading.partial_discharge_pC} pC`, limit: "Alarm: 500 | Danger: 1000", status: reading.partial_discharge_pC > 1000 ? "DANGER" : reading.partial_discharge_pC > 500 ? "ALARM" : "NORMAL" },

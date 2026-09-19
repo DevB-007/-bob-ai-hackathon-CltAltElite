@@ -28,6 +28,8 @@ export interface SensorReading extends DGAReadings {
   load_percent: number;         // Current load as % of rated capacity
   tap_position?: number;        // On-load tap changer (OLTC) tap index
   dissolved_gas_ppm?: number;   // Total combustible dissolved gas (TCG proxy)
+  voltage_v?: number;           // Live voltage
+  current_a?: number;           // Live current
   ambient_temp_c?: number;      // Ambient weather temperature for delta-T calculations
 }
 

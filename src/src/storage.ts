@@ -127,16 +127,16 @@ export class GridStore {
     return { ...this.memoryData.latest_readings };
   }
 
-  public setReading(reading: SensorReading): void {
+  public setReading(reading: SensorReading, skipSave: boolean = false): void {
     this.memoryData.latest_readings[reading.asset_id] = reading;
-    this.save();
+    if (!skipSave) this.save();
   }
 
-  public setReadings(readings: SensorReading[]): void {
+  public setReadings(readings: SensorReading[], skipSave: boolean = false): void {
     for (const r of readings) {
       this.memoryData.latest_readings[r.asset_id] = r;
     }
-    this.save();
+    if (!skipSave) this.save();
   }
 
   // ── Weather Forecasts ───────────────────────────────────────────────────────

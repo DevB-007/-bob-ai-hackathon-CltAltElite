@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "last_saved": "2026-09-15T05:13:17.480Z",
+  "last_saved": "2026-09-19T08:07:53.425Z",
   "assets": {
     "TX-001": {
       "asset_id": "TX-001",
@@ -210,6 +210,79 @@
         "lat": 36.6,
         "lon": -119.9
       }
+    },
+    "T-101": {
+      "asset_id": "T-101",
+      "asset_type": "transformer",
+      "name": "North Bay 230/115kV Autotransformer",
+      "region": "North Bay",
+      "substation_id": "SUB-NB-01",
+      "voltage_kv": 230,
+      "rated_mva": 300,
+      "age_years": 44,
+      "customers_served": 85000,
+      "criticality_tier": 1,
+      "last_maintenance_date": "2021-03-15",
+      "coordinates": {
+        "lat": 37.82,
+        "lon": -122.28
+      },
+      "backup_feed_available": true,
+      "alternate_substation_id": "SUB-NB-02"
+    },
+    "T-102": {
+      "asset_id": "T-102",
+      "asset_type": "transformer",
+      "name": "Eastport 115/33kV Power Transformer",
+      "region": "Eastport",
+      "substation_id": "SUB-EP-02",
+      "voltage_kv": 115,
+      "rated_mva": 120,
+      "age_years": 18,
+      "customers_served": 22000,
+      "criticality_tier": 2,
+      "last_maintenance_date": "2023-09-10",
+      "coordinates": {
+        "lat": 37.64,
+        "lon": -122.05
+      },
+      "backup_feed_available": true,
+      "alternate_substation_id": "SUB-EP-01"
+    },
+    "T-103": {
+      "asset_id": "T-103",
+      "asset_type": "transformer",
+      "name": "Riverside 500/230kV GSU Transformer",
+      "region": "Riverside",
+      "substation_id": "SUB-RS-01",
+      "voltage_kv": 500,
+      "rated_mva": 600,
+      "age_years": 31,
+      "customers_served": 210000,
+      "criticality_tier": 1,
+      "last_maintenance_date": "2022-06-20",
+      "coordinates": {
+        "lat": 33.98,
+        "lon": -117.37
+      },
+      "backup_feed_available": false
+    },
+    "T-104": {
+      "asset_id": "T-104",
+      "asset_type": "transformer",
+      "name": "Central Valley 115/12kV Distribution Xfmr",
+      "region": "Central Valley",
+      "substation_id": "SUB-CV-03",
+      "voltage_kv": 115,
+      "rated_mva": 60,
+      "age_years": 27,
+      "customers_served": 14000,
+      "criticality_tier": 3,
+      "last_maintenance_date": "2022-04-05",
+      "coordinates": {
+        "lat": 36.74,
+        "lon": -119.78
+      }
     }
   },
   "latest_readings": {
@@ -253,7 +326,7 @@
     },
     "CB-001": {
       "asset_id": "CB-001",
-      "timestamp": "2026-09-15T05:13:17.477Z",
+      "timestamp": "2026-09-19T06:59:17.891Z",
       "temperature_c": 62,
       "vibration_mm_s": 9.4,
       "partial_discharge_pC": 280,
@@ -271,7 +344,7 @@
     },
     "TX-005": {
       "asset_id": "TX-005",
-      "timestamp": "2026-09-15T05:13:17.477Z",
+      "timestamp": "2026-09-19T06:59:17.891Z",
       "temperature_c": 58,
       "vibration_mm_s": 2.3,
       "partial_discharge_pC": 12,
@@ -280,7 +353,7 @@
     },
     "TX-006": {
       "asset_id": "TX-006",
-      "timestamp": "2026-09-15T05:13:17.477Z",
+      "timestamp": "2026-09-19T06:59:17.891Z",
       "temperature_c": 91,
       "vibration_mm_s": 7.6,
       "partial_discharge_pC": 430,
@@ -290,7 +363,7 @@
     },
     "SUB-001": {
       "asset_id": "SUB-001",
-      "timestamp": "2026-09-15T05:13:17.477Z",
+      "timestamp": "2026-09-19T06:59:17.891Z",
       "temperature_c": 71,
       "vibration_mm_s": 3.8,
       "partial_discharge_pC": 145,
@@ -299,7 +372,7 @@
     },
     "LN-001": {
       "asset_id": "LN-001",
-      "timestamp": "2026-09-15T05:13:17.477Z",
+      "timestamp": "2026-09-19T06:59:17.891Z",
       "temperature_c": 68,
       "vibration_mm_s": 5.8,
       "partial_discharge_pC": 220,
@@ -308,7 +381,7 @@
     },
     "TX-007": {
       "asset_id": "TX-007",
-      "timestamp": "2026-09-15T05:13:17.477Z",
+      "timestamp": "2026-09-19T06:59:17.891Z",
       "temperature_c": 64,
       "vibration_mm_s": 2,
       "partial_discharge_pC": 18,
@@ -317,7 +390,7 @@
     },
     "CB-002": {
       "asset_id": "CB-002",
-      "timestamp": "2026-09-15T05:13:17.477Z",
+      "timestamp": "2026-09-19T06:59:17.891Z",
       "temperature_c": 48,
       "vibration_mm_s": 1.9,
       "partial_discharge_pC": 8,
@@ -326,19 +399,66 @@
     },
     "TX-008": {
       "asset_id": "TX-008",
-      "timestamp": "2026-09-15T05:13:17.477Z",
+      "timestamp": "2026-09-19T06:59:17.891Z",
       "temperature_c": 55,
       "vibration_mm_s": 1.4,
       "partial_discharge_pC": 5,
       "oil_quality_index": 97,
       "load_percent": 45
+    },
+    "T-101": {
+      "asset_id": "T-101",
+      "timestamp": "2026-09-19T06:59:17.891Z",
+      "temperature_c": 108,
+      "vibration_mm_s": 8.9,
+      "partial_discharge_pC": 820,
+      "oil_quality_index": 28,
+      "load_percent": 118,
+      "tap_position": 7,
+      "dissolved_gas_ppm": 340,
+      "h2_ppm": 85,
+      "c2h4_ppm": 110,
+      "c2h2_ppm": 4.2,
+      "co_ppm": 620
+    },
+    "T-102": {
+      "asset_id": "T-102",
+      "timestamp": "2026-09-19T06:59:17.891Z",
+      "temperature_c": 74,
+      "vibration_mm_s": 5.2,
+      "partial_discharge_pC": 65,
+      "oil_quality_index": 81,
+      "load_percent": 88
+    },
+    "T-103": {
+      "asset_id": "T-103",
+      "timestamp": "2026-09-19T06:59:17.891Z",
+      "temperature_c": 103,
+      "vibration_mm_s": 6.1,
+      "partial_discharge_pC": 1150,
+      "oil_quality_index": 35,
+      "load_percent": 112,
+      "dissolved_gas_ppm": 610,
+      "h2_ppm": 210,
+      "c2h4_ppm": 95,
+      "c2h2_ppm": 6.8,
+      "co_ppm": 490
+    },
+    "T-104": {
+      "asset_id": "T-104",
+      "timestamp": "2026-09-19T06:59:17.891Z",
+      "temperature_c": 79,
+      "vibration_mm_s": 4.1,
+      "partial_discharge_pC": 95,
+      "oil_quality_index": 68,
+      "load_percent": 94
     }
   },
   "weather_forecasts": {
     "North Bay": {
       "region": "North Bay",
-      "forecast_time": "2026-09-15T05:13:17.477Z",
-      "valid_until": "2026-09-17T05:13:17.477Z",
+      "forecast_time": "2026-09-19T06:59:17.891Z",
+      "valid_until": "2026-09-21T06:59:17.895Z",
       "temperature_c": 38,
       "wind_speed_kmh": 85,
       "precipitation_mm": 0,
@@ -350,8 +470,8 @@
     },
     "Riverside": {
       "region": "Riverside",
-      "forecast_time": "2026-09-15T05:13:17.477Z",
-      "valid_until": "2026-09-16T05:13:17.477Z",
+      "forecast_time": "2026-09-19T06:59:17.891Z",
+      "valid_until": "2026-09-20T06:59:17.895Z",
       "temperature_c": 43,
       "wind_speed_kmh": 45,
       "precipitation_mm": 0,
@@ -363,8 +483,8 @@
     },
     "Eastport": {
       "region": "Eastport",
-      "forecast_time": "2026-09-15T05:13:17.477Z",
-      "valid_until": "2026-09-16T17:13:17.477Z",
+      "forecast_time": "2026-09-19T06:59:17.891Z",
+      "valid_until": "2026-09-20T18:59:17.895Z",
       "temperature_c": 22,
       "wind_speed_kmh": 28,
       "precipitation_mm": 12,
@@ -375,8 +495,8 @@
     },
     "Central Valley": {
       "region": "Central Valley",
-      "forecast_time": "2026-09-15T05:13:17.477Z",
-      "valid_until": "2026-09-16T05:13:17.477Z",
+      "forecast_time": "2026-09-19T06:59:17.891Z",
+      "valid_until": "2026-09-20T06:59:17.895Z",
       "temperature_c": 41,
       "wind_speed_kmh": 22,
       "precipitation_mm": 0,
@@ -388,8 +508,8 @@
     },
     "South Shore": {
       "region": "South Shore",
-      "forecast_time": "2026-09-15T05:13:17.477Z",
-      "valid_until": "2026-09-18T05:13:17.477Z",
+      "forecast_time": "2026-09-19T06:59:17.891Z",
+      "valid_until": "2026-09-22T06:59:17.895Z",
       "temperature_c": 35,
       "wind_speed_kmh": 110,
       "precipitation_mm": 85,
@@ -441,8 +561,2983 @@
         "duration_hours": 0,
         "customers_affected": 0,
         "root_cause": "Oil sample shows moisture ingress and reduced dielectric strength"
+      },
+      {
+        "incident_id": "INC-2024-0019",
+        "asset_id": "TX-006",
+        "occurred_at": "2024-01-05T18:30:00Z",
+        "type": "maintenance_finding",
+        "duration_hours": 0,
+        "customers_affected": 0,
+        "root_cause": "Oil sample shows moisture ingress and reduced dielectric strength"
+      },
+      {
+        "incident_id": "INC-2024-0019",
+        "asset_id": "TX-006",
+        "occurred_at": "2024-01-05T18:30:00Z",
+        "type": "maintenance_finding",
+        "duration_hours": 0,
+        "customers_affected": 0,
+        "root_cause": "Oil sample shows moisture ingress and reduced dielectric strength"
+      },
+      {
+        "incident_id": "INC-2024-0019",
+        "asset_id": "TX-006",
+        "occurred_at": "2024-01-05T18:30:00Z",
+        "type": "maintenance_finding",
+        "duration_hours": 0,
+        "customers_affected": 0,
+        "root_cause": "Oil sample shows moisture ingress and reduced dielectric strength"
+      },
+      {
+        "incident_id": "INC-2024-0019",
+        "asset_id": "TX-006",
+        "occurred_at": "2024-01-05T18:30:00Z",
+        "type": "maintenance_finding",
+        "duration_hours": 0,
+        "customers_affected": 0,
+        "root_cause": "Oil sample shows moisture ingress and reduced dielectric strength"
+      },
+      {
+        "incident_id": "INC-2024-0019",
+        "asset_id": "TX-006",
+        "occurred_at": "2024-01-05T18:30:00Z",
+        "type": "maintenance_finding",
+        "duration_hours": 0,
+        "customers_affected": 0,
+        "root_cause": "Oil sample shows moisture ingress and reduced dielectric strength"
+      },
+      {
+        "incident_id": "INC-2024-0019",
+        "asset_id": "TX-006",
+        "occurred_at": "2024-01-05T18:30:00Z",
+        "type": "maintenance_finding",
+        "duration_hours": 0,
+        "customers_affected": 0,
+        "root_cause": "Oil sample shows moisture ingress and reduced dielectric strength"
+      },
+      {
+        "incident_id": "INC-2024-0019",
+        "asset_id": "TX-006",
+        "occurred_at": "2024-01-05T18:30:00Z",
+        "type": "maintenance_finding",
+        "duration_hours": 0,
+        "customers_affected": 0,
+        "root_cause": "Oil sample shows moisture ingress and reduced dielectric strength"
+      },
+      {
+        "incident_id": "INC-2024-0019",
+        "asset_id": "TX-006",
+        "occurred_at": "2024-01-05T18:30:00Z",
+        "type": "maintenance_finding",
+        "duration_hours": 0,
+        "customers_affected": 0,
+        "root_cause": "Oil sample shows moisture ingress and reduced dielectric strength"
+      },
+      {
+        "incident_id": "INC-2024-0019",
+        "asset_id": "TX-006",
+        "occurred_at": "2024-01-05T18:30:00Z",
+        "type": "maintenance_finding",
+        "duration_hours": 0,
+        "customers_affected": 0,
+        "root_cause": "Oil sample shows moisture ingress and reduced dielectric strength"
+      },
+      {
+        "incident_id": "INC-2024-0019",
+        "asset_id": "TX-006",
+        "occurred_at": "2024-01-05T18:30:00Z",
+        "type": "maintenance_finding",
+        "duration_hours": 0,
+        "customers_affected": 0,
+        "root_cause": "Oil sample shows moisture ingress and reduced dielectric strength"
+      },
+      {
+        "incident_id": "INC-2024-0019",
+        "asset_id": "TX-006",
+        "occurred_at": "2024-01-05T18:30:00Z",
+        "type": "maintenance_finding",
+        "duration_hours": 0,
+        "customers_affected": 0,
+        "root_cause": "Oil sample shows moisture ingress and reduced dielectric strength"
+      },
+      {
+        "incident_id": "INC-2024-0019",
+        "asset_id": "TX-006",
+        "occurred_at": "2024-01-05T18:30:00Z",
+        "type": "maintenance_finding",
+        "duration_hours": 0,
+        "customers_affected": 0,
+        "root_cause": "Oil sample shows moisture ingress and reduced dielectric strength"
+      },
+      {
+        "incident_id": "INC-2024-0019",
+        "asset_id": "TX-006",
+        "occurred_at": "2024-01-05T18:30:00Z",
+        "type": "maintenance_finding",
+        "duration_hours": 0,
+        "customers_affected": 0,
+        "root_cause": "Oil sample shows moisture ingress and reduced dielectric strength"
+      },
+      {
+        "incident_id": "INC-2024-0019",
+        "asset_id": "TX-006",
+        "occurred_at": "2024-01-05T18:30:00Z",
+        "type": "maintenance_finding",
+        "duration_hours": 0,
+        "customers_affected": 0,
+        "root_cause": "Oil sample shows moisture ingress and reduced dielectric strength"
+      },
+      {
+        "incident_id": "INC-2024-0019",
+        "asset_id": "TX-006",
+        "occurred_at": "2024-01-05T18:30:00Z",
+        "type": "maintenance_finding",
+        "duration_hours": 0,
+        "customers_affected": 0,
+        "root_cause": "Oil sample shows moisture ingress and reduced dielectric strength"
+      },
+      {
+        "incident_id": "INC-2024-0019",
+        "asset_id": "TX-006",
+        "occurred_at": "2024-01-05T18:30:00Z",
+        "type": "maintenance_finding",
+        "duration_hours": 0,
+        "customers_affected": 0,
+        "root_cause": "Oil sample shows moisture ingress and reduced dielectric strength"
+      },
+      {
+        "incident_id": "INC-2024-0019",
+        "asset_id": "TX-006",
+        "occurred_at": "2024-01-05T18:30:00Z",
+        "type": "maintenance_finding",
+        "duration_hours": 0,
+        "customers_affected": 0,
+        "root_cause": "Oil sample shows moisture ingress and reduced dielectric strength"
+      },
+      {
+        "incident_id": "INC-2024-0019",
+        "asset_id": "TX-006",
+        "occurred_at": "2024-01-05T18:30:00Z",
+        "type": "maintenance_finding",
+        "duration_hours": 0,
+        "customers_affected": 0,
+        "root_cause": "Oil sample shows moisture ingress and reduced dielectric strength"
+      },
+      {
+        "incident_id": "INC-2024-0019",
+        "asset_id": "TX-006",
+        "occurred_at": "2024-01-05T18:30:00Z",
+        "type": "maintenance_finding",
+        "duration_hours": 0,
+        "customers_affected": 0,
+        "root_cause": "Oil sample shows moisture ingress and reduced dielectric strength"
+      },
+      {
+        "incident_id": "INC-2024-0019",
+        "asset_id": "TX-006",
+        "occurred_at": "2024-01-05T18:30:00Z",
+        "type": "maintenance_finding",
+        "duration_hours": 0,
+        "customers_affected": 0,
+        "root_cause": "Oil sample shows moisture ingress and reduced dielectric strength"
+      },
+      {
+        "incident_id": "INC-2024-0019",
+        "asset_id": "TX-006",
+        "occurred_at": "2024-01-05T18:30:00Z",
+        "type": "maintenance_finding",
+        "duration_hours": 0,
+        "customers_affected": 0,
+        "root_cause": "Oil sample shows moisture ingress and reduced dielectric strength"
+      },
+      {
+        "incident_id": "INC-2024-0019",
+        "asset_id": "TX-006",
+        "occurred_at": "2024-01-05T18:30:00Z",
+        "type": "maintenance_finding",
+        "duration_hours": 0,
+        "customers_affected": 0,
+        "root_cause": "Oil sample shows moisture ingress and reduced dielectric strength"
+      },
+      {
+        "incident_id": "INC-2024-0019",
+        "asset_id": "TX-006",
+        "occurred_at": "2024-01-05T18:30:00Z",
+        "type": "maintenance_finding",
+        "duration_hours": 0,
+        "customers_affected": 0,
+        "root_cause": "Oil sample shows moisture ingress and reduced dielectric strength"
+      },
+      {
+        "incident_id": "INC-2024-0019",
+        "asset_id": "TX-006",
+        "occurred_at": "2024-01-05T18:30:00Z",
+        "type": "maintenance_finding",
+        "duration_hours": 0,
+        "customers_affected": 0,
+        "root_cause": "Oil sample shows moisture ingress and reduced dielectric strength"
+      },
+      {
+        "incident_id": "INC-2024-0019",
+        "asset_id": "TX-006",
+        "occurred_at": "2024-01-05T18:30:00Z",
+        "type": "maintenance_finding",
+        "duration_hours": 0,
+        "customers_affected": 0,
+        "root_cause": "Oil sample shows moisture ingress and reduced dielectric strength"
+      },
+      {
+        "incident_id": "INC-2024-0019",
+        "asset_id": "TX-006",
+        "occurred_at": "2024-01-05T18:30:00Z",
+        "type": "maintenance_finding",
+        "duration_hours": 0,
+        "customers_affected": 0,
+        "root_cause": "Oil sample shows moisture ingress and reduced dielectric strength"
+      },
+      {
+        "incident_id": "INC-2024-0019",
+        "asset_id": "TX-006",
+        "occurred_at": "2024-01-05T18:30:00Z",
+        "type": "maintenance_finding",
+        "duration_hours": 0,
+        "customers_affected": 0,
+        "root_cause": "Oil sample shows moisture ingress and reduced dielectric strength"
+      },
+      {
+        "incident_id": "INC-2024-0019",
+        "asset_id": "TX-006",
+        "occurred_at": "2024-01-05T18:30:00Z",
+        "type": "maintenance_finding",
+        "duration_hours": 0,
+        "customers_affected": 0,
+        "root_cause": "Oil sample shows moisture ingress and reduced dielectric strength"
+      },
+      {
+        "incident_id": "INC-2024-0019",
+        "asset_id": "TX-006",
+        "occurred_at": "2024-01-05T18:30:00Z",
+        "type": "maintenance_finding",
+        "duration_hours": 0,
+        "customers_affected": 0,
+        "root_cause": "Oil sample shows moisture ingress and reduced dielectric strength"
+      },
+      {
+        "incident_id": "INC-2024-0019",
+        "asset_id": "TX-006",
+        "occurred_at": "2024-01-05T18:30:00Z",
+        "type": "maintenance_finding",
+        "duration_hours": 0,
+        "customers_affected": 0,
+        "root_cause": "Oil sample shows moisture ingress and reduced dielectric strength"
+      },
+      {
+        "incident_id": "INC-2024-0019",
+        "asset_id": "TX-006",
+        "occurred_at": "2024-01-05T18:30:00Z",
+        "type": "maintenance_finding",
+        "duration_hours": 0,
+        "customers_affected": 0,
+        "root_cause": "Oil sample shows moisture ingress and reduced dielectric strength"
+      },
+      {
+        "incident_id": "INC-2024-0019",
+        "asset_id": "TX-006",
+        "occurred_at": "2024-01-05T18:30:00Z",
+        "type": "maintenance_finding",
+        "duration_hours": 0,
+        "customers_affected": 0,
+        "root_cause": "Oil sample shows moisture ingress and reduced dielectric strength"
+      },
+      {
+        "incident_id": "INC-2024-0019",
+        "asset_id": "TX-006",
+        "occurred_at": "2024-01-05T18:30:00Z",
+        "type": "maintenance_finding",
+        "duration_hours": 0,
+        "customers_affected": 0,
+        "root_cause": "Oil sample shows moisture ingress and reduced dielectric strength"
+      },
+      {
+        "incident_id": "INC-2024-0019",
+        "asset_id": "TX-006",
+        "occurred_at": "2024-01-05T18:30:00Z",
+        "type": "maintenance_finding",
+        "duration_hours": 0,
+        "customers_affected": 0,
+        "root_cause": "Oil sample shows moisture ingress and reduced dielectric strength"
+      },
+      {
+        "incident_id": "INC-2024-0019",
+        "asset_id": "TX-006",
+        "occurred_at": "2024-01-05T18:30:00Z",
+        "type": "maintenance_finding",
+        "duration_hours": 0,
+        "customers_affected": 0,
+        "root_cause": "Oil sample shows moisture ingress and reduced dielectric strength"
+      },
+      {
+        "incident_id": "INC-2024-0019",
+        "asset_id": "TX-006",
+        "occurred_at": "2024-01-05T18:30:00Z",
+        "type": "maintenance_finding",
+        "duration_hours": 0,
+        "customers_affected": 0,
+        "root_cause": "Oil sample shows moisture ingress and reduced dielectric strength"
+      },
+      {
+        "incident_id": "INC-2024-0019",
+        "asset_id": "TX-006",
+        "occurred_at": "2024-01-05T18:30:00Z",
+        "type": "maintenance_finding",
+        "duration_hours": 0,
+        "customers_affected": 0,
+        "root_cause": "Oil sample shows moisture ingress and reduced dielectric strength"
+      },
+      {
+        "incident_id": "INC-2024-0019",
+        "asset_id": "TX-006",
+        "occurred_at": "2024-01-05T18:30:00Z",
+        "type": "maintenance_finding",
+        "duration_hours": 0,
+        "customers_affected": 0,
+        "root_cause": "Oil sample shows moisture ingress and reduced dielectric strength"
+      },
+      {
+        "incident_id": "INC-2024-0019",
+        "asset_id": "TX-006",
+        "occurred_at": "2024-01-05T18:30:00Z",
+        "type": "maintenance_finding",
+        "duration_hours": 0,
+        "customers_affected": 0,
+        "root_cause": "Oil sample shows moisture ingress and reduced dielectric strength"
+      },
+      {
+        "incident_id": "INC-2024-0019",
+        "asset_id": "TX-006",
+        "occurred_at": "2024-01-05T18:30:00Z",
+        "type": "maintenance_finding",
+        "duration_hours": 0,
+        "customers_affected": 0,
+        "root_cause": "Oil sample shows moisture ingress and reduced dielectric strength"
+      },
+      {
+        "incident_id": "INC-2024-0019",
+        "asset_id": "TX-006",
+        "occurred_at": "2024-01-05T18:30:00Z",
+        "type": "maintenance_finding",
+        "duration_hours": 0,
+        "customers_affected": 0,
+        "root_cause": "Oil sample shows moisture ingress and reduced dielectric strength"
+      },
+      {
+        "incident_id": "INC-2024-0019",
+        "asset_id": "TX-006",
+        "occurred_at": "2024-01-05T18:30:00Z",
+        "type": "maintenance_finding",
+        "duration_hours": 0,
+        "customers_affected": 0,
+        "root_cause": "Oil sample shows moisture ingress and reduced dielectric strength"
+      },
+      {
+        "incident_id": "INC-2024-0019",
+        "asset_id": "TX-006",
+        "occurred_at": "2024-01-05T18:30:00Z",
+        "type": "maintenance_finding",
+        "duration_hours": 0,
+        "customers_affected": 0,
+        "root_cause": "Oil sample shows moisture ingress and reduced dielectric strength"
+      },
+      {
+        "incident_id": "INC-2024-0019",
+        "asset_id": "TX-006",
+        "occurred_at": "2024-01-05T18:30:00Z",
+        "type": "maintenance_finding",
+        "duration_hours": 0,
+        "customers_affected": 0,
+        "root_cause": "Oil sample shows moisture ingress and reduced dielectric strength"
+      },
+      {
+        "incident_id": "INC-2024-0019",
+        "asset_id": "TX-006",
+        "occurred_at": "2024-01-05T18:30:00Z",
+        "type": "maintenance_finding",
+        "duration_hours": 0,
+        "customers_affected": 0,
+        "root_cause": "Oil sample shows moisture ingress and reduced dielectric strength"
+      },
+      {
+        "incident_id": "INC-2024-0019",
+        "asset_id": "TX-006",
+        "occurred_at": "2024-01-05T18:30:00Z",
+        "type": "maintenance_finding",
+        "duration_hours": 0,
+        "customers_affected": 0,
+        "root_cause": "Oil sample shows moisture ingress and reduced dielectric strength"
+      },
+      {
+        "incident_id": "INC-2024-0019",
+        "asset_id": "TX-006",
+        "occurred_at": "2024-01-05T18:30:00Z",
+        "type": "maintenance_finding",
+        "duration_hours": 0,
+        "customers_affected": 0,
+        "root_cause": "Oil sample shows moisture ingress and reduced dielectric strength"
+      },
+      {
+        "incident_id": "INC-2024-0019",
+        "asset_id": "TX-006",
+        "occurred_at": "2024-01-05T18:30:00Z",
+        "type": "maintenance_finding",
+        "duration_hours": 0,
+        "customers_affected": 0,
+        "root_cause": "Oil sample shows moisture ingress and reduced dielectric strength"
+      },
+      {
+        "incident_id": "INC-2024-0019",
+        "asset_id": "TX-006",
+        "occurred_at": "2024-01-05T18:30:00Z",
+        "type": "maintenance_finding",
+        "duration_hours": 0,
+        "customers_affected": 0,
+        "root_cause": "Oil sample shows moisture ingress and reduced dielectric strength"
+      },
+      {
+        "incident_id": "INC-2024-0019",
+        "asset_id": "TX-006",
+        "occurred_at": "2024-01-05T18:30:00Z",
+        "type": "maintenance_finding",
+        "duration_hours": 0,
+        "customers_affected": 0,
+        "root_cause": "Oil sample shows moisture ingress and reduced dielectric strength"
+      },
+      {
+        "incident_id": "INC-2024-0019",
+        "asset_id": "TX-006",
+        "occurred_at": "2024-01-05T18:30:00Z",
+        "type": "maintenance_finding",
+        "duration_hours": 0,
+        "customers_affected": 0,
+        "root_cause": "Oil sample shows moisture ingress and reduced dielectric strength"
+      },
+      {
+        "incident_id": "INC-2024-0019",
+        "asset_id": "TX-006",
+        "occurred_at": "2024-01-05T18:30:00Z",
+        "type": "maintenance_finding",
+        "duration_hours": 0,
+        "customers_affected": 0,
+        "root_cause": "Oil sample shows moisture ingress and reduced dielectric strength"
+      },
+      {
+        "incident_id": "INC-2024-0019",
+        "asset_id": "TX-006",
+        "occurred_at": "2024-01-05T18:30:00Z",
+        "type": "maintenance_finding",
+        "duration_hours": 0,
+        "customers_affected": 0,
+        "root_cause": "Oil sample shows moisture ingress and reduced dielectric strength"
+      },
+      {
+        "incident_id": "INC-2024-0019",
+        "asset_id": "TX-006",
+        "occurred_at": "2024-01-05T18:30:00Z",
+        "type": "maintenance_finding",
+        "duration_hours": 0,
+        "customers_affected": 0,
+        "root_cause": "Oil sample shows moisture ingress and reduced dielectric strength"
+      }
+    ],
+    "T-101": [
+      {
+        "incident_id": "INC-2023-0041",
+        "asset_id": "T-101",
+        "occurred_at": "2023-07-18T14:22:00Z",
+        "type": "near_miss",
+        "duration_hours": 0,
+        "customers_affected": 0,
+        "root_cause": "Abnormal DGA results — acetylene spike detected during routine sampling"
+      },
+      {
+        "incident_id": "INC-2022-0087",
+        "asset_id": "T-101",
+        "occurred_at": "2022-08-03T09:10:00Z",
+        "type": "fault",
+        "duration_hours": 3.5,
+        "customers_affected": 12000,
+        "root_cause": "Tap changer mechanism failure — stuck between positions"
+      },
+      {
+        "incident_id": "INC-2023-0041",
+        "asset_id": "T-101",
+        "occurred_at": "2023-07-18T14:22:00Z",
+        "type": "near_miss",
+        "duration_hours": 0,
+        "customers_affected": 0,
+        "root_cause": "Abnormal DGA results — acetylene spike detected during routine sampling"
+      },
+      {
+        "incident_id": "INC-2022-0087",
+        "asset_id": "T-101",
+        "occurred_at": "2022-08-03T09:10:00Z",
+        "type": "fault",
+        "duration_hours": 3.5,
+        "customers_affected": 12000,
+        "root_cause": "Tap changer mechanism failure — stuck between positions"
+      },
+      {
+        "incident_id": "INC-2023-0041",
+        "asset_id": "T-101",
+        "occurred_at": "2023-07-18T14:22:00Z",
+        "type": "near_miss",
+        "duration_hours": 0,
+        "customers_affected": 0,
+        "root_cause": "Abnormal DGA results — acetylene spike detected during routine sampling"
+      },
+      {
+        "incident_id": "INC-2022-0087",
+        "asset_id": "T-101",
+        "occurred_at": "2022-08-03T09:10:00Z",
+        "type": "fault",
+        "duration_hours": 3.5,
+        "customers_affected": 12000,
+        "root_cause": "Tap changer mechanism failure — stuck between positions"
+      },
+      {
+        "incident_id": "INC-2023-0041",
+        "asset_id": "T-101",
+        "occurred_at": "2023-07-18T14:22:00Z",
+        "type": "near_miss",
+        "duration_hours": 0,
+        "customers_affected": 0,
+        "root_cause": "Abnormal DGA results — acetylene spike detected during routine sampling"
+      },
+      {
+        "incident_id": "INC-2022-0087",
+        "asset_id": "T-101",
+        "occurred_at": "2022-08-03T09:10:00Z",
+        "type": "fault",
+        "duration_hours": 3.5,
+        "customers_affected": 12000,
+        "root_cause": "Tap changer mechanism failure — stuck between positions"
+      },
+      {
+        "incident_id": "INC-2023-0041",
+        "asset_id": "T-101",
+        "occurred_at": "2023-07-18T14:22:00Z",
+        "type": "near_miss",
+        "duration_hours": 0,
+        "customers_affected": 0,
+        "root_cause": "Abnormal DGA results — acetylene spike detected during routine sampling"
+      },
+      {
+        "incident_id": "INC-2022-0087",
+        "asset_id": "T-101",
+        "occurred_at": "2022-08-03T09:10:00Z",
+        "type": "fault",
+        "duration_hours": 3.5,
+        "customers_affected": 12000,
+        "root_cause": "Tap changer mechanism failure — stuck between positions"
+      },
+      {
+        "incident_id": "INC-2023-0041",
+        "asset_id": "T-101",
+        "occurred_at": "2023-07-18T14:22:00Z",
+        "type": "near_miss",
+        "duration_hours": 0,
+        "customers_affected": 0,
+        "root_cause": "Abnormal DGA results — acetylene spike detected during routine sampling"
+      },
+      {
+        "incident_id": "INC-2022-0087",
+        "asset_id": "T-101",
+        "occurred_at": "2022-08-03T09:10:00Z",
+        "type": "fault",
+        "duration_hours": 3.5,
+        "customers_affected": 12000,
+        "root_cause": "Tap changer mechanism failure — stuck between positions"
+      },
+      {
+        "incident_id": "INC-2023-0041",
+        "asset_id": "T-101",
+        "occurred_at": "2023-07-18T14:22:00Z",
+        "type": "near_miss",
+        "duration_hours": 0,
+        "customers_affected": 0,
+        "root_cause": "Abnormal DGA results — acetylene spike detected during routine sampling"
+      },
+      {
+        "incident_id": "INC-2022-0087",
+        "asset_id": "T-101",
+        "occurred_at": "2022-08-03T09:10:00Z",
+        "type": "fault",
+        "duration_hours": 3.5,
+        "customers_affected": 12000,
+        "root_cause": "Tap changer mechanism failure — stuck between positions"
+      },
+      {
+        "incident_id": "INC-2023-0041",
+        "asset_id": "T-101",
+        "occurred_at": "2023-07-18T14:22:00Z",
+        "type": "near_miss",
+        "duration_hours": 0,
+        "customers_affected": 0,
+        "root_cause": "Abnormal DGA results — acetylene spike detected during routine sampling"
+      },
+      {
+        "incident_id": "INC-2022-0087",
+        "asset_id": "T-101",
+        "occurred_at": "2022-08-03T09:10:00Z",
+        "type": "fault",
+        "duration_hours": 3.5,
+        "customers_affected": 12000,
+        "root_cause": "Tap changer mechanism failure — stuck between positions"
+      },
+      {
+        "incident_id": "INC-2023-0041",
+        "asset_id": "T-101",
+        "occurred_at": "2023-07-18T14:22:00Z",
+        "type": "near_miss",
+        "duration_hours": 0,
+        "customers_affected": 0,
+        "root_cause": "Abnormal DGA results — acetylene spike detected during routine sampling"
+      },
+      {
+        "incident_id": "INC-2022-0087",
+        "asset_id": "T-101",
+        "occurred_at": "2022-08-03T09:10:00Z",
+        "type": "fault",
+        "duration_hours": 3.5,
+        "customers_affected": 12000,
+        "root_cause": "Tap changer mechanism failure — stuck between positions"
+      },
+      {
+        "incident_id": "INC-2023-0041",
+        "asset_id": "T-101",
+        "occurred_at": "2023-07-18T14:22:00Z",
+        "type": "near_miss",
+        "duration_hours": 0,
+        "customers_affected": 0,
+        "root_cause": "Abnormal DGA results — acetylene spike detected during routine sampling"
+      },
+      {
+        "incident_id": "INC-2022-0087",
+        "asset_id": "T-101",
+        "occurred_at": "2022-08-03T09:10:00Z",
+        "type": "fault",
+        "duration_hours": 3.5,
+        "customers_affected": 12000,
+        "root_cause": "Tap changer mechanism failure — stuck between positions"
+      },
+      {
+        "incident_id": "INC-2023-0041",
+        "asset_id": "T-101",
+        "occurred_at": "2023-07-18T14:22:00Z",
+        "type": "near_miss",
+        "duration_hours": 0,
+        "customers_affected": 0,
+        "root_cause": "Abnormal DGA results — acetylene spike detected during routine sampling"
+      },
+      {
+        "incident_id": "INC-2022-0087",
+        "asset_id": "T-101",
+        "occurred_at": "2022-08-03T09:10:00Z",
+        "type": "fault",
+        "duration_hours": 3.5,
+        "customers_affected": 12000,
+        "root_cause": "Tap changer mechanism failure — stuck between positions"
+      },
+      {
+        "incident_id": "INC-2023-0041",
+        "asset_id": "T-101",
+        "occurred_at": "2023-07-18T14:22:00Z",
+        "type": "near_miss",
+        "duration_hours": 0,
+        "customers_affected": 0,
+        "root_cause": "Abnormal DGA results — acetylene spike detected during routine sampling"
+      },
+      {
+        "incident_id": "INC-2022-0087",
+        "asset_id": "T-101",
+        "occurred_at": "2022-08-03T09:10:00Z",
+        "type": "fault",
+        "duration_hours": 3.5,
+        "customers_affected": 12000,
+        "root_cause": "Tap changer mechanism failure — stuck between positions"
+      },
+      {
+        "incident_id": "INC-2023-0041",
+        "asset_id": "T-101",
+        "occurred_at": "2023-07-18T14:22:00Z",
+        "type": "near_miss",
+        "duration_hours": 0,
+        "customers_affected": 0,
+        "root_cause": "Abnormal DGA results — acetylene spike detected during routine sampling"
+      },
+      {
+        "incident_id": "INC-2022-0087",
+        "asset_id": "T-101",
+        "occurred_at": "2022-08-03T09:10:00Z",
+        "type": "fault",
+        "duration_hours": 3.5,
+        "customers_affected": 12000,
+        "root_cause": "Tap changer mechanism failure — stuck between positions"
+      },
+      {
+        "incident_id": "INC-2023-0041",
+        "asset_id": "T-101",
+        "occurred_at": "2023-07-18T14:22:00Z",
+        "type": "near_miss",
+        "duration_hours": 0,
+        "customers_affected": 0,
+        "root_cause": "Abnormal DGA results — acetylene spike detected during routine sampling"
+      },
+      {
+        "incident_id": "INC-2022-0087",
+        "asset_id": "T-101",
+        "occurred_at": "2022-08-03T09:10:00Z",
+        "type": "fault",
+        "duration_hours": 3.5,
+        "customers_affected": 12000,
+        "root_cause": "Tap changer mechanism failure — stuck between positions"
+      },
+      {
+        "incident_id": "INC-2023-0041",
+        "asset_id": "T-101",
+        "occurred_at": "2023-07-18T14:22:00Z",
+        "type": "near_miss",
+        "duration_hours": 0,
+        "customers_affected": 0,
+        "root_cause": "Abnormal DGA results — acetylene spike detected during routine sampling"
+      },
+      {
+        "incident_id": "INC-2022-0087",
+        "asset_id": "T-101",
+        "occurred_at": "2022-08-03T09:10:00Z",
+        "type": "fault",
+        "duration_hours": 3.5,
+        "customers_affected": 12000,
+        "root_cause": "Tap changer mechanism failure — stuck between positions"
+      },
+      {
+        "incident_id": "INC-2023-0041",
+        "asset_id": "T-101",
+        "occurred_at": "2023-07-18T14:22:00Z",
+        "type": "near_miss",
+        "duration_hours": 0,
+        "customers_affected": 0,
+        "root_cause": "Abnormal DGA results — acetylene spike detected during routine sampling"
+      },
+      {
+        "incident_id": "INC-2022-0087",
+        "asset_id": "T-101",
+        "occurred_at": "2022-08-03T09:10:00Z",
+        "type": "fault",
+        "duration_hours": 3.5,
+        "customers_affected": 12000,
+        "root_cause": "Tap changer mechanism failure — stuck between positions"
+      },
+      {
+        "incident_id": "INC-2023-0041",
+        "asset_id": "T-101",
+        "occurred_at": "2023-07-18T14:22:00Z",
+        "type": "near_miss",
+        "duration_hours": 0,
+        "customers_affected": 0,
+        "root_cause": "Abnormal DGA results — acetylene spike detected during routine sampling"
+      },
+      {
+        "incident_id": "INC-2022-0087",
+        "asset_id": "T-101",
+        "occurred_at": "2022-08-03T09:10:00Z",
+        "type": "fault",
+        "duration_hours": 3.5,
+        "customers_affected": 12000,
+        "root_cause": "Tap changer mechanism failure — stuck between positions"
+      },
+      {
+        "incident_id": "INC-2023-0041",
+        "asset_id": "T-101",
+        "occurred_at": "2023-07-18T14:22:00Z",
+        "type": "near_miss",
+        "duration_hours": 0,
+        "customers_affected": 0,
+        "root_cause": "Abnormal DGA results — acetylene spike detected during routine sampling"
+      },
+      {
+        "incident_id": "INC-2022-0087",
+        "asset_id": "T-101",
+        "occurred_at": "2022-08-03T09:10:00Z",
+        "type": "fault",
+        "duration_hours": 3.5,
+        "customers_affected": 12000,
+        "root_cause": "Tap changer mechanism failure — stuck between positions"
+      },
+      {
+        "incident_id": "INC-2023-0041",
+        "asset_id": "T-101",
+        "occurred_at": "2023-07-18T14:22:00Z",
+        "type": "near_miss",
+        "duration_hours": 0,
+        "customers_affected": 0,
+        "root_cause": "Abnormal DGA results — acetylene spike detected during routine sampling"
+      },
+      {
+        "incident_id": "INC-2022-0087",
+        "asset_id": "T-101",
+        "occurred_at": "2022-08-03T09:10:00Z",
+        "type": "fault",
+        "duration_hours": 3.5,
+        "customers_affected": 12000,
+        "root_cause": "Tap changer mechanism failure — stuck between positions"
+      },
+      {
+        "incident_id": "INC-2023-0041",
+        "asset_id": "T-101",
+        "occurred_at": "2023-07-18T14:22:00Z",
+        "type": "near_miss",
+        "duration_hours": 0,
+        "customers_affected": 0,
+        "root_cause": "Abnormal DGA results — acetylene spike detected during routine sampling"
+      },
+      {
+        "incident_id": "INC-2022-0087",
+        "asset_id": "T-101",
+        "occurred_at": "2022-08-03T09:10:00Z",
+        "type": "fault",
+        "duration_hours": 3.5,
+        "customers_affected": 12000,
+        "root_cause": "Tap changer mechanism failure — stuck between positions"
+      },
+      {
+        "incident_id": "INC-2023-0041",
+        "asset_id": "T-101",
+        "occurred_at": "2023-07-18T14:22:00Z",
+        "type": "near_miss",
+        "duration_hours": 0,
+        "customers_affected": 0,
+        "root_cause": "Abnormal DGA results — acetylene spike detected during routine sampling"
+      },
+      {
+        "incident_id": "INC-2022-0087",
+        "asset_id": "T-101",
+        "occurred_at": "2022-08-03T09:10:00Z",
+        "type": "fault",
+        "duration_hours": 3.5,
+        "customers_affected": 12000,
+        "root_cause": "Tap changer mechanism failure — stuck between positions"
+      },
+      {
+        "incident_id": "INC-2023-0041",
+        "asset_id": "T-101",
+        "occurred_at": "2023-07-18T14:22:00Z",
+        "type": "near_miss",
+        "duration_hours": 0,
+        "customers_affected": 0,
+        "root_cause": "Abnormal DGA results — acetylene spike detected during routine sampling"
+      },
+      {
+        "incident_id": "INC-2022-0087",
+        "asset_id": "T-101",
+        "occurred_at": "2022-08-03T09:10:00Z",
+        "type": "fault",
+        "duration_hours": 3.5,
+        "customers_affected": 12000,
+        "root_cause": "Tap changer mechanism failure — stuck between positions"
+      },
+      {
+        "incident_id": "INC-2023-0041",
+        "asset_id": "T-101",
+        "occurred_at": "2023-07-18T14:22:00Z",
+        "type": "near_miss",
+        "duration_hours": 0,
+        "customers_affected": 0,
+        "root_cause": "Abnormal DGA results — acetylene spike detected during routine sampling"
+      },
+      {
+        "incident_id": "INC-2022-0087",
+        "asset_id": "T-101",
+        "occurred_at": "2022-08-03T09:10:00Z",
+        "type": "fault",
+        "duration_hours": 3.5,
+        "customers_affected": 12000,
+        "root_cause": "Tap changer mechanism failure — stuck between positions"
+      },
+      {
+        "incident_id": "INC-2023-0041",
+        "asset_id": "T-101",
+        "occurred_at": "2023-07-18T14:22:00Z",
+        "type": "near_miss",
+        "duration_hours": 0,
+        "customers_affected": 0,
+        "root_cause": "Abnormal DGA results — acetylene spike detected during routine sampling"
+      },
+      {
+        "incident_id": "INC-2022-0087",
+        "asset_id": "T-101",
+        "occurred_at": "2022-08-03T09:10:00Z",
+        "type": "fault",
+        "duration_hours": 3.5,
+        "customers_affected": 12000,
+        "root_cause": "Tap changer mechanism failure — stuck between positions"
+      },
+      {
+        "incident_id": "INC-2023-0041",
+        "asset_id": "T-101",
+        "occurred_at": "2023-07-18T14:22:00Z",
+        "type": "near_miss",
+        "duration_hours": 0,
+        "customers_affected": 0,
+        "root_cause": "Abnormal DGA results — acetylene spike detected during routine sampling"
+      },
+      {
+        "incident_id": "INC-2022-0087",
+        "asset_id": "T-101",
+        "occurred_at": "2022-08-03T09:10:00Z",
+        "type": "fault",
+        "duration_hours": 3.5,
+        "customers_affected": 12000,
+        "root_cause": "Tap changer mechanism failure — stuck between positions"
+      },
+      {
+        "incident_id": "INC-2023-0041",
+        "asset_id": "T-101",
+        "occurred_at": "2023-07-18T14:22:00Z",
+        "type": "near_miss",
+        "duration_hours": 0,
+        "customers_affected": 0,
+        "root_cause": "Abnormal DGA results — acetylene spike detected during routine sampling"
+      },
+      {
+        "incident_id": "INC-2022-0087",
+        "asset_id": "T-101",
+        "occurred_at": "2022-08-03T09:10:00Z",
+        "type": "fault",
+        "duration_hours": 3.5,
+        "customers_affected": 12000,
+        "root_cause": "Tap changer mechanism failure — stuck between positions"
+      },
+      {
+        "incident_id": "INC-2023-0041",
+        "asset_id": "T-101",
+        "occurred_at": "2023-07-18T14:22:00Z",
+        "type": "near_miss",
+        "duration_hours": 0,
+        "customers_affected": 0,
+        "root_cause": "Abnormal DGA results — acetylene spike detected during routine sampling"
+      },
+      {
+        "incident_id": "INC-2022-0087",
+        "asset_id": "T-101",
+        "occurred_at": "2022-08-03T09:10:00Z",
+        "type": "fault",
+        "duration_hours": 3.5,
+        "customers_affected": 12000,
+        "root_cause": "Tap changer mechanism failure — stuck between positions"
+      },
+      {
+        "incident_id": "INC-2023-0041",
+        "asset_id": "T-101",
+        "occurred_at": "2023-07-18T14:22:00Z",
+        "type": "near_miss",
+        "duration_hours": 0,
+        "customers_affected": 0,
+        "root_cause": "Abnormal DGA results — acetylene spike detected during routine sampling"
+      },
+      {
+        "incident_id": "INC-2022-0087",
+        "asset_id": "T-101",
+        "occurred_at": "2022-08-03T09:10:00Z",
+        "type": "fault",
+        "duration_hours": 3.5,
+        "customers_affected": 12000,
+        "root_cause": "Tap changer mechanism failure — stuck between positions"
+      },
+      {
+        "incident_id": "INC-2023-0041",
+        "asset_id": "T-101",
+        "occurred_at": "2023-07-18T14:22:00Z",
+        "type": "near_miss",
+        "duration_hours": 0,
+        "customers_affected": 0,
+        "root_cause": "Abnormal DGA results — acetylene spike detected during routine sampling"
+      },
+      {
+        "incident_id": "INC-2022-0087",
+        "asset_id": "T-101",
+        "occurred_at": "2022-08-03T09:10:00Z",
+        "type": "fault",
+        "duration_hours": 3.5,
+        "customers_affected": 12000,
+        "root_cause": "Tap changer mechanism failure — stuck between positions"
+      },
+      {
+        "incident_id": "INC-2023-0041",
+        "asset_id": "T-101",
+        "occurred_at": "2023-07-18T14:22:00Z",
+        "type": "near_miss",
+        "duration_hours": 0,
+        "customers_affected": 0,
+        "root_cause": "Abnormal DGA results — acetylene spike detected during routine sampling"
+      },
+      {
+        "incident_id": "INC-2022-0087",
+        "asset_id": "T-101",
+        "occurred_at": "2022-08-03T09:10:00Z",
+        "type": "fault",
+        "duration_hours": 3.5,
+        "customers_affected": 12000,
+        "root_cause": "Tap changer mechanism failure — stuck between positions"
+      },
+      {
+        "incident_id": "INC-2023-0041",
+        "asset_id": "T-101",
+        "occurred_at": "2023-07-18T14:22:00Z",
+        "type": "near_miss",
+        "duration_hours": 0,
+        "customers_affected": 0,
+        "root_cause": "Abnormal DGA results — acetylene spike detected during routine sampling"
+      },
+      {
+        "incident_id": "INC-2022-0087",
+        "asset_id": "T-101",
+        "occurred_at": "2022-08-03T09:10:00Z",
+        "type": "fault",
+        "duration_hours": 3.5,
+        "customers_affected": 12000,
+        "root_cause": "Tap changer mechanism failure — stuck between positions"
+      },
+      {
+        "incident_id": "INC-2023-0041",
+        "asset_id": "T-101",
+        "occurred_at": "2023-07-18T14:22:00Z",
+        "type": "near_miss",
+        "duration_hours": 0,
+        "customers_affected": 0,
+        "root_cause": "Abnormal DGA results — acetylene spike detected during routine sampling"
+      },
+      {
+        "incident_id": "INC-2022-0087",
+        "asset_id": "T-101",
+        "occurred_at": "2022-08-03T09:10:00Z",
+        "type": "fault",
+        "duration_hours": 3.5,
+        "customers_affected": 12000,
+        "root_cause": "Tap changer mechanism failure — stuck between positions"
+      },
+      {
+        "incident_id": "INC-2023-0041",
+        "asset_id": "T-101",
+        "occurred_at": "2023-07-18T14:22:00Z",
+        "type": "near_miss",
+        "duration_hours": 0,
+        "customers_affected": 0,
+        "root_cause": "Abnormal DGA results — acetylene spike detected during routine sampling"
+      },
+      {
+        "incident_id": "INC-2022-0087",
+        "asset_id": "T-101",
+        "occurred_at": "2022-08-03T09:10:00Z",
+        "type": "fault",
+        "duration_hours": 3.5,
+        "customers_affected": 12000,
+        "root_cause": "Tap changer mechanism failure — stuck between positions"
+      },
+      {
+        "incident_id": "INC-2023-0041",
+        "asset_id": "T-101",
+        "occurred_at": "2023-07-18T14:22:00Z",
+        "type": "near_miss",
+        "duration_hours": 0,
+        "customers_affected": 0,
+        "root_cause": "Abnormal DGA results — acetylene spike detected during routine sampling"
+      },
+      {
+        "incident_id": "INC-2022-0087",
+        "asset_id": "T-101",
+        "occurred_at": "2022-08-03T09:10:00Z",
+        "type": "fault",
+        "duration_hours": 3.5,
+        "customers_affected": 12000,
+        "root_cause": "Tap changer mechanism failure — stuck between positions"
+      },
+      {
+        "incident_id": "INC-2023-0041",
+        "asset_id": "T-101",
+        "occurred_at": "2023-07-18T14:22:00Z",
+        "type": "near_miss",
+        "duration_hours": 0,
+        "customers_affected": 0,
+        "root_cause": "Abnormal DGA results — acetylene spike detected during routine sampling"
+      },
+      {
+        "incident_id": "INC-2022-0087",
+        "asset_id": "T-101",
+        "occurred_at": "2022-08-03T09:10:00Z",
+        "type": "fault",
+        "duration_hours": 3.5,
+        "customers_affected": 12000,
+        "root_cause": "Tap changer mechanism failure — stuck between positions"
+      },
+      {
+        "incident_id": "INC-2023-0041",
+        "asset_id": "T-101",
+        "occurred_at": "2023-07-18T14:22:00Z",
+        "type": "near_miss",
+        "duration_hours": 0,
+        "customers_affected": 0,
+        "root_cause": "Abnormal DGA results — acetylene spike detected during routine sampling"
+      },
+      {
+        "incident_id": "INC-2022-0087",
+        "asset_id": "T-101",
+        "occurred_at": "2022-08-03T09:10:00Z",
+        "type": "fault",
+        "duration_hours": 3.5,
+        "customers_affected": 12000,
+        "root_cause": "Tap changer mechanism failure — stuck between positions"
+      },
+      {
+        "incident_id": "INC-2023-0041",
+        "asset_id": "T-101",
+        "occurred_at": "2023-07-18T14:22:00Z",
+        "type": "near_miss",
+        "duration_hours": 0,
+        "customers_affected": 0,
+        "root_cause": "Abnormal DGA results — acetylene spike detected during routine sampling"
+      },
+      {
+        "incident_id": "INC-2022-0087",
+        "asset_id": "T-101",
+        "occurred_at": "2022-08-03T09:10:00Z",
+        "type": "fault",
+        "duration_hours": 3.5,
+        "customers_affected": 12000,
+        "root_cause": "Tap changer mechanism failure — stuck between positions"
+      },
+      {
+        "incident_id": "INC-2023-0041",
+        "asset_id": "T-101",
+        "occurred_at": "2023-07-18T14:22:00Z",
+        "type": "near_miss",
+        "duration_hours": 0,
+        "customers_affected": 0,
+        "root_cause": "Abnormal DGA results — acetylene spike detected during routine sampling"
+      },
+      {
+        "incident_id": "INC-2022-0087",
+        "asset_id": "T-101",
+        "occurred_at": "2022-08-03T09:10:00Z",
+        "type": "fault",
+        "duration_hours": 3.5,
+        "customers_affected": 12000,
+        "root_cause": "Tap changer mechanism failure — stuck between positions"
+      },
+      {
+        "incident_id": "INC-2023-0041",
+        "asset_id": "T-101",
+        "occurred_at": "2023-07-18T14:22:00Z",
+        "type": "near_miss",
+        "duration_hours": 0,
+        "customers_affected": 0,
+        "root_cause": "Abnormal DGA results — acetylene spike detected during routine sampling"
+      },
+      {
+        "incident_id": "INC-2022-0087",
+        "asset_id": "T-101",
+        "occurred_at": "2022-08-03T09:10:00Z",
+        "type": "fault",
+        "duration_hours": 3.5,
+        "customers_affected": 12000,
+        "root_cause": "Tap changer mechanism failure — stuck between positions"
+      },
+      {
+        "incident_id": "INC-2023-0041",
+        "asset_id": "T-101",
+        "occurred_at": "2023-07-18T14:22:00Z",
+        "type": "near_miss",
+        "duration_hours": 0,
+        "customers_affected": 0,
+        "root_cause": "Abnormal DGA results — acetylene spike detected during routine sampling"
+      },
+      {
+        "incident_id": "INC-2022-0087",
+        "asset_id": "T-101",
+        "occurred_at": "2022-08-03T09:10:00Z",
+        "type": "fault",
+        "duration_hours": 3.5,
+        "customers_affected": 12000,
+        "root_cause": "Tap changer mechanism failure — stuck between positions"
+      },
+      {
+        "incident_id": "INC-2023-0041",
+        "asset_id": "T-101",
+        "occurred_at": "2023-07-18T14:22:00Z",
+        "type": "near_miss",
+        "duration_hours": 0,
+        "customers_affected": 0,
+        "root_cause": "Abnormal DGA results — acetylene spike detected during routine sampling"
+      },
+      {
+        "incident_id": "INC-2022-0087",
+        "asset_id": "T-101",
+        "occurred_at": "2022-08-03T09:10:00Z",
+        "type": "fault",
+        "duration_hours": 3.5,
+        "customers_affected": 12000,
+        "root_cause": "Tap changer mechanism failure — stuck between positions"
+      },
+      {
+        "incident_id": "INC-2023-0041",
+        "asset_id": "T-101",
+        "occurred_at": "2023-07-18T14:22:00Z",
+        "type": "near_miss",
+        "duration_hours": 0,
+        "customers_affected": 0,
+        "root_cause": "Abnormal DGA results — acetylene spike detected during routine sampling"
+      },
+      {
+        "incident_id": "INC-2022-0087",
+        "asset_id": "T-101",
+        "occurred_at": "2022-08-03T09:10:00Z",
+        "type": "fault",
+        "duration_hours": 3.5,
+        "customers_affected": 12000,
+        "root_cause": "Tap changer mechanism failure — stuck between positions"
+      },
+      {
+        "incident_id": "INC-2023-0041",
+        "asset_id": "T-101",
+        "occurred_at": "2023-07-18T14:22:00Z",
+        "type": "near_miss",
+        "duration_hours": 0,
+        "customers_affected": 0,
+        "root_cause": "Abnormal DGA results — acetylene spike detected during routine sampling"
+      },
+      {
+        "incident_id": "INC-2022-0087",
+        "asset_id": "T-101",
+        "occurred_at": "2022-08-03T09:10:00Z",
+        "type": "fault",
+        "duration_hours": 3.5,
+        "customers_affected": 12000,
+        "root_cause": "Tap changer mechanism failure — stuck between positions"
+      },
+      {
+        "incident_id": "INC-2023-0041",
+        "asset_id": "T-101",
+        "occurred_at": "2023-07-18T14:22:00Z",
+        "type": "near_miss",
+        "duration_hours": 0,
+        "customers_affected": 0,
+        "root_cause": "Abnormal DGA results — acetylene spike detected during routine sampling"
+      },
+      {
+        "incident_id": "INC-2022-0087",
+        "asset_id": "T-101",
+        "occurred_at": "2022-08-03T09:10:00Z",
+        "type": "fault",
+        "duration_hours": 3.5,
+        "customers_affected": 12000,
+        "root_cause": "Tap changer mechanism failure — stuck between positions"
+      },
+      {
+        "incident_id": "INC-2023-0041",
+        "asset_id": "T-101",
+        "occurred_at": "2023-07-18T14:22:00Z",
+        "type": "near_miss",
+        "duration_hours": 0,
+        "customers_affected": 0,
+        "root_cause": "Abnormal DGA results — acetylene spike detected during routine sampling"
+      },
+      {
+        "incident_id": "INC-2022-0087",
+        "asset_id": "T-101",
+        "occurred_at": "2022-08-03T09:10:00Z",
+        "type": "fault",
+        "duration_hours": 3.5,
+        "customers_affected": 12000,
+        "root_cause": "Tap changer mechanism failure — stuck between positions"
+      },
+      {
+        "incident_id": "INC-2023-0041",
+        "asset_id": "T-101",
+        "occurred_at": "2023-07-18T14:22:00Z",
+        "type": "near_miss",
+        "duration_hours": 0,
+        "customers_affected": 0,
+        "root_cause": "Abnormal DGA results — acetylene spike detected during routine sampling"
+      },
+      {
+        "incident_id": "INC-2022-0087",
+        "asset_id": "T-101",
+        "occurred_at": "2022-08-03T09:10:00Z",
+        "type": "fault",
+        "duration_hours": 3.5,
+        "customers_affected": 12000,
+        "root_cause": "Tap changer mechanism failure — stuck between positions"
+      },
+      {
+        "incident_id": "INC-2023-0041",
+        "asset_id": "T-101",
+        "occurred_at": "2023-07-18T14:22:00Z",
+        "type": "near_miss",
+        "duration_hours": 0,
+        "customers_affected": 0,
+        "root_cause": "Abnormal DGA results — acetylene spike detected during routine sampling"
+      },
+      {
+        "incident_id": "INC-2022-0087",
+        "asset_id": "T-101",
+        "occurred_at": "2022-08-03T09:10:00Z",
+        "type": "fault",
+        "duration_hours": 3.5,
+        "customers_affected": 12000,
+        "root_cause": "Tap changer mechanism failure — stuck between positions"
+      },
+      {
+        "incident_id": "INC-2023-0041",
+        "asset_id": "T-101",
+        "occurred_at": "2023-07-18T14:22:00Z",
+        "type": "near_miss",
+        "duration_hours": 0,
+        "customers_affected": 0,
+        "root_cause": "Abnormal DGA results — acetylene spike detected during routine sampling"
+      },
+      {
+        "incident_id": "INC-2022-0087",
+        "asset_id": "T-101",
+        "occurred_at": "2022-08-03T09:10:00Z",
+        "type": "fault",
+        "duration_hours": 3.5,
+        "customers_affected": 12000,
+        "root_cause": "Tap changer mechanism failure — stuck between positions"
+      },
+      {
+        "incident_id": "INC-2023-0041",
+        "asset_id": "T-101",
+        "occurred_at": "2023-07-18T14:22:00Z",
+        "type": "near_miss",
+        "duration_hours": 0,
+        "customers_affected": 0,
+        "root_cause": "Abnormal DGA results — acetylene spike detected during routine sampling"
+      },
+      {
+        "incident_id": "INC-2022-0087",
+        "asset_id": "T-101",
+        "occurred_at": "2022-08-03T09:10:00Z",
+        "type": "fault",
+        "duration_hours": 3.5,
+        "customers_affected": 12000,
+        "root_cause": "Tap changer mechanism failure — stuck between positions"
+      },
+      {
+        "incident_id": "INC-2023-0041",
+        "asset_id": "T-101",
+        "occurred_at": "2023-07-18T14:22:00Z",
+        "type": "near_miss",
+        "duration_hours": 0,
+        "customers_affected": 0,
+        "root_cause": "Abnormal DGA results — acetylene spike detected during routine sampling"
+      },
+      {
+        "incident_id": "INC-2022-0087",
+        "asset_id": "T-101",
+        "occurred_at": "2022-08-03T09:10:00Z",
+        "type": "fault",
+        "duration_hours": 3.5,
+        "customers_affected": 12000,
+        "root_cause": "Tap changer mechanism failure — stuck between positions"
+      },
+      {
+        "incident_id": "INC-2023-0041",
+        "asset_id": "T-101",
+        "occurred_at": "2023-07-18T14:22:00Z",
+        "type": "near_miss",
+        "duration_hours": 0,
+        "customers_affected": 0,
+        "root_cause": "Abnormal DGA results — acetylene spike detected during routine sampling"
+      },
+      {
+        "incident_id": "INC-2022-0087",
+        "asset_id": "T-101",
+        "occurred_at": "2022-08-03T09:10:00Z",
+        "type": "fault",
+        "duration_hours": 3.5,
+        "customers_affected": 12000,
+        "root_cause": "Tap changer mechanism failure — stuck between positions"
+      },
+      {
+        "incident_id": "INC-2023-0041",
+        "asset_id": "T-101",
+        "occurred_at": "2023-07-18T14:22:00Z",
+        "type": "near_miss",
+        "duration_hours": 0,
+        "customers_affected": 0,
+        "root_cause": "Abnormal DGA results — acetylene spike detected during routine sampling"
+      },
+      {
+        "incident_id": "INC-2022-0087",
+        "asset_id": "T-101",
+        "occurred_at": "2022-08-03T09:10:00Z",
+        "type": "fault",
+        "duration_hours": 3.5,
+        "customers_affected": 12000,
+        "root_cause": "Tap changer mechanism failure — stuck between positions"
+      },
+      {
+        "incident_id": "INC-2023-0041",
+        "asset_id": "T-101",
+        "occurred_at": "2023-07-18T14:22:00Z",
+        "type": "near_miss",
+        "duration_hours": 0,
+        "customers_affected": 0,
+        "root_cause": "Abnormal DGA results — acetylene spike detected during routine sampling"
+      },
+      {
+        "incident_id": "INC-2022-0087",
+        "asset_id": "T-101",
+        "occurred_at": "2022-08-03T09:10:00Z",
+        "type": "fault",
+        "duration_hours": 3.5,
+        "customers_affected": 12000,
+        "root_cause": "Tap changer mechanism failure — stuck between positions"
+      },
+      {
+        "incident_id": "INC-2023-0041",
+        "asset_id": "T-101",
+        "occurred_at": "2023-07-18T14:22:00Z",
+        "type": "near_miss",
+        "duration_hours": 0,
+        "customers_affected": 0,
+        "root_cause": "Abnormal DGA results — acetylene spike detected during routine sampling"
+      },
+      {
+        "incident_id": "INC-2022-0087",
+        "asset_id": "T-101",
+        "occurred_at": "2022-08-03T09:10:00Z",
+        "type": "fault",
+        "duration_hours": 3.5,
+        "customers_affected": 12000,
+        "root_cause": "Tap changer mechanism failure — stuck between positions"
+      }
+    ],
+    "T-103": [
+      {
+        "incident_id": "INC-2024-0012",
+        "asset_id": "T-103",
+        "occurred_at": "2024-02-11T02:45:00Z",
+        "type": "outage",
+        "duration_hours": 7.2,
+        "customers_affected": 48000,
+        "root_cause": "Bushing flashover following partial discharge escalation"
+      },
+      {
+        "incident_id": "INC-2024-0012",
+        "asset_id": "T-103",
+        "occurred_at": "2024-02-11T02:45:00Z",
+        "type": "outage",
+        "duration_hours": 7.2,
+        "customers_affected": 48000,
+        "root_cause": "Bushing flashover following partial discharge escalation"
+      },
+      {
+        "incident_id": "INC-2024-0012",
+        "asset_id": "T-103",
+        "occurred_at": "2024-02-11T02:45:00Z",
+        "type": "outage",
+        "duration_hours": 7.2,
+        "customers_affected": 48000,
+        "root_cause": "Bushing flashover following partial discharge escalation"
+      },
+      {
+        "incident_id": "INC-2024-0012",
+        "asset_id": "T-103",
+        "occurred_at": "2024-02-11T02:45:00Z",
+        "type": "outage",
+        "duration_hours": 7.2,
+        "customers_affected": 48000,
+        "root_cause": "Bushing flashover following partial discharge escalation"
+      },
+      {
+        "incident_id": "INC-2024-0012",
+        "asset_id": "T-103",
+        "occurred_at": "2024-02-11T02:45:00Z",
+        "type": "outage",
+        "duration_hours": 7.2,
+        "customers_affected": 48000,
+        "root_cause": "Bushing flashover following partial discharge escalation"
+      },
+      {
+        "incident_id": "INC-2024-0012",
+        "asset_id": "T-103",
+        "occurred_at": "2024-02-11T02:45:00Z",
+        "type": "outage",
+        "duration_hours": 7.2,
+        "customers_affected": 48000,
+        "root_cause": "Bushing flashover following partial discharge escalation"
+      },
+      {
+        "incident_id": "INC-2024-0012",
+        "asset_id": "T-103",
+        "occurred_at": "2024-02-11T02:45:00Z",
+        "type": "outage",
+        "duration_hours": 7.2,
+        "customers_affected": 48000,
+        "root_cause": "Bushing flashover following partial discharge escalation"
+      },
+      {
+        "incident_id": "INC-2024-0012",
+        "asset_id": "T-103",
+        "occurred_at": "2024-02-11T02:45:00Z",
+        "type": "outage",
+        "duration_hours": 7.2,
+        "customers_affected": 48000,
+        "root_cause": "Bushing flashover following partial discharge escalation"
+      },
+      {
+        "incident_id": "INC-2024-0012",
+        "asset_id": "T-103",
+        "occurred_at": "2024-02-11T02:45:00Z",
+        "type": "outage",
+        "duration_hours": 7.2,
+        "customers_affected": 48000,
+        "root_cause": "Bushing flashover following partial discharge escalation"
+      },
+      {
+        "incident_id": "INC-2024-0012",
+        "asset_id": "T-103",
+        "occurred_at": "2024-02-11T02:45:00Z",
+        "type": "outage",
+        "duration_hours": 7.2,
+        "customers_affected": 48000,
+        "root_cause": "Bushing flashover following partial discharge escalation"
+      },
+      {
+        "incident_id": "INC-2024-0012",
+        "asset_id": "T-103",
+        "occurred_at": "2024-02-11T02:45:00Z",
+        "type": "outage",
+        "duration_hours": 7.2,
+        "customers_affected": 48000,
+        "root_cause": "Bushing flashover following partial discharge escalation"
+      },
+      {
+        "incident_id": "INC-2024-0012",
+        "asset_id": "T-103",
+        "occurred_at": "2024-02-11T02:45:00Z",
+        "type": "outage",
+        "duration_hours": 7.2,
+        "customers_affected": 48000,
+        "root_cause": "Bushing flashover following partial discharge escalation"
+      },
+      {
+        "incident_id": "INC-2024-0012",
+        "asset_id": "T-103",
+        "occurred_at": "2024-02-11T02:45:00Z",
+        "type": "outage",
+        "duration_hours": 7.2,
+        "customers_affected": 48000,
+        "root_cause": "Bushing flashover following partial discharge escalation"
+      },
+      {
+        "incident_id": "INC-2024-0012",
+        "asset_id": "T-103",
+        "occurred_at": "2024-02-11T02:45:00Z",
+        "type": "outage",
+        "duration_hours": 7.2,
+        "customers_affected": 48000,
+        "root_cause": "Bushing flashover following partial discharge escalation"
+      },
+      {
+        "incident_id": "INC-2024-0012",
+        "asset_id": "T-103",
+        "occurred_at": "2024-02-11T02:45:00Z",
+        "type": "outage",
+        "duration_hours": 7.2,
+        "customers_affected": 48000,
+        "root_cause": "Bushing flashover following partial discharge escalation"
+      },
+      {
+        "incident_id": "INC-2024-0012",
+        "asset_id": "T-103",
+        "occurred_at": "2024-02-11T02:45:00Z",
+        "type": "outage",
+        "duration_hours": 7.2,
+        "customers_affected": 48000,
+        "root_cause": "Bushing flashover following partial discharge escalation"
+      },
+      {
+        "incident_id": "INC-2024-0012",
+        "asset_id": "T-103",
+        "occurred_at": "2024-02-11T02:45:00Z",
+        "type": "outage",
+        "duration_hours": 7.2,
+        "customers_affected": 48000,
+        "root_cause": "Bushing flashover following partial discharge escalation"
+      },
+      {
+        "incident_id": "INC-2024-0012",
+        "asset_id": "T-103",
+        "occurred_at": "2024-02-11T02:45:00Z",
+        "type": "outage",
+        "duration_hours": 7.2,
+        "customers_affected": 48000,
+        "root_cause": "Bushing flashover following partial discharge escalation"
+      },
+      {
+        "incident_id": "INC-2024-0012",
+        "asset_id": "T-103",
+        "occurred_at": "2024-02-11T02:45:00Z",
+        "type": "outage",
+        "duration_hours": 7.2,
+        "customers_affected": 48000,
+        "root_cause": "Bushing flashover following partial discharge escalation"
+      },
+      {
+        "incident_id": "INC-2024-0012",
+        "asset_id": "T-103",
+        "occurred_at": "2024-02-11T02:45:00Z",
+        "type": "outage",
+        "duration_hours": 7.2,
+        "customers_affected": 48000,
+        "root_cause": "Bushing flashover following partial discharge escalation"
+      },
+      {
+        "incident_id": "INC-2024-0012",
+        "asset_id": "T-103",
+        "occurred_at": "2024-02-11T02:45:00Z",
+        "type": "outage",
+        "duration_hours": 7.2,
+        "customers_affected": 48000,
+        "root_cause": "Bushing flashover following partial discharge escalation"
+      },
+      {
+        "incident_id": "INC-2024-0012",
+        "asset_id": "T-103",
+        "occurred_at": "2024-02-11T02:45:00Z",
+        "type": "outage",
+        "duration_hours": 7.2,
+        "customers_affected": 48000,
+        "root_cause": "Bushing flashover following partial discharge escalation"
+      },
+      {
+        "incident_id": "INC-2024-0012",
+        "asset_id": "T-103",
+        "occurred_at": "2024-02-11T02:45:00Z",
+        "type": "outage",
+        "duration_hours": 7.2,
+        "customers_affected": 48000,
+        "root_cause": "Bushing flashover following partial discharge escalation"
+      },
+      {
+        "incident_id": "INC-2024-0012",
+        "asset_id": "T-103",
+        "occurred_at": "2024-02-11T02:45:00Z",
+        "type": "outage",
+        "duration_hours": 7.2,
+        "customers_affected": 48000,
+        "root_cause": "Bushing flashover following partial discharge escalation"
+      },
+      {
+        "incident_id": "INC-2024-0012",
+        "asset_id": "T-103",
+        "occurred_at": "2024-02-11T02:45:00Z",
+        "type": "outage",
+        "duration_hours": 7.2,
+        "customers_affected": 48000,
+        "root_cause": "Bushing flashover following partial discharge escalation"
+      },
+      {
+        "incident_id": "INC-2024-0012",
+        "asset_id": "T-103",
+        "occurred_at": "2024-02-11T02:45:00Z",
+        "type": "outage",
+        "duration_hours": 7.2,
+        "customers_affected": 48000,
+        "root_cause": "Bushing flashover following partial discharge escalation"
+      },
+      {
+        "incident_id": "INC-2024-0012",
+        "asset_id": "T-103",
+        "occurred_at": "2024-02-11T02:45:00Z",
+        "type": "outage",
+        "duration_hours": 7.2,
+        "customers_affected": 48000,
+        "root_cause": "Bushing flashover following partial discharge escalation"
+      },
+      {
+        "incident_id": "INC-2024-0012",
+        "asset_id": "T-103",
+        "occurred_at": "2024-02-11T02:45:00Z",
+        "type": "outage",
+        "duration_hours": 7.2,
+        "customers_affected": 48000,
+        "root_cause": "Bushing flashover following partial discharge escalation"
+      },
+      {
+        "incident_id": "INC-2024-0012",
+        "asset_id": "T-103",
+        "occurred_at": "2024-02-11T02:45:00Z",
+        "type": "outage",
+        "duration_hours": 7.2,
+        "customers_affected": 48000,
+        "root_cause": "Bushing flashover following partial discharge escalation"
+      },
+      {
+        "incident_id": "INC-2024-0012",
+        "asset_id": "T-103",
+        "occurred_at": "2024-02-11T02:45:00Z",
+        "type": "outage",
+        "duration_hours": 7.2,
+        "customers_affected": 48000,
+        "root_cause": "Bushing flashover following partial discharge escalation"
+      },
+      {
+        "incident_id": "INC-2024-0012",
+        "asset_id": "T-103",
+        "occurred_at": "2024-02-11T02:45:00Z",
+        "type": "outage",
+        "duration_hours": 7.2,
+        "customers_affected": 48000,
+        "root_cause": "Bushing flashover following partial discharge escalation"
+      },
+      {
+        "incident_id": "INC-2024-0012",
+        "asset_id": "T-103",
+        "occurred_at": "2024-02-11T02:45:00Z",
+        "type": "outage",
+        "duration_hours": 7.2,
+        "customers_affected": 48000,
+        "root_cause": "Bushing flashover following partial discharge escalation"
+      },
+      {
+        "incident_id": "INC-2024-0012",
+        "asset_id": "T-103",
+        "occurred_at": "2024-02-11T02:45:00Z",
+        "type": "outage",
+        "duration_hours": 7.2,
+        "customers_affected": 48000,
+        "root_cause": "Bushing flashover following partial discharge escalation"
+      },
+      {
+        "incident_id": "INC-2024-0012",
+        "asset_id": "T-103",
+        "occurred_at": "2024-02-11T02:45:00Z",
+        "type": "outage",
+        "duration_hours": 7.2,
+        "customers_affected": 48000,
+        "root_cause": "Bushing flashover following partial discharge escalation"
+      },
+      {
+        "incident_id": "INC-2024-0012",
+        "asset_id": "T-103",
+        "occurred_at": "2024-02-11T02:45:00Z",
+        "type": "outage",
+        "duration_hours": 7.2,
+        "customers_affected": 48000,
+        "root_cause": "Bushing flashover following partial discharge escalation"
+      },
+      {
+        "incident_id": "INC-2024-0012",
+        "asset_id": "T-103",
+        "occurred_at": "2024-02-11T02:45:00Z",
+        "type": "outage",
+        "duration_hours": 7.2,
+        "customers_affected": 48000,
+        "root_cause": "Bushing flashover following partial discharge escalation"
+      },
+      {
+        "incident_id": "INC-2024-0012",
+        "asset_id": "T-103",
+        "occurred_at": "2024-02-11T02:45:00Z",
+        "type": "outage",
+        "duration_hours": 7.2,
+        "customers_affected": 48000,
+        "root_cause": "Bushing flashover following partial discharge escalation"
+      },
+      {
+        "incident_id": "INC-2024-0012",
+        "asset_id": "T-103",
+        "occurred_at": "2024-02-11T02:45:00Z",
+        "type": "outage",
+        "duration_hours": 7.2,
+        "customers_affected": 48000,
+        "root_cause": "Bushing flashover following partial discharge escalation"
+      },
+      {
+        "incident_id": "INC-2024-0012",
+        "asset_id": "T-103",
+        "occurred_at": "2024-02-11T02:45:00Z",
+        "type": "outage",
+        "duration_hours": 7.2,
+        "customers_affected": 48000,
+        "root_cause": "Bushing flashover following partial discharge escalation"
+      },
+      {
+        "incident_id": "INC-2024-0012",
+        "asset_id": "T-103",
+        "occurred_at": "2024-02-11T02:45:00Z",
+        "type": "outage",
+        "duration_hours": 7.2,
+        "customers_affected": 48000,
+        "root_cause": "Bushing flashover following partial discharge escalation"
+      },
+      {
+        "incident_id": "INC-2024-0012",
+        "asset_id": "T-103",
+        "occurred_at": "2024-02-11T02:45:00Z",
+        "type": "outage",
+        "duration_hours": 7.2,
+        "customers_affected": 48000,
+        "root_cause": "Bushing flashover following partial discharge escalation"
+      },
+      {
+        "incident_id": "INC-2024-0012",
+        "asset_id": "T-103",
+        "occurred_at": "2024-02-11T02:45:00Z",
+        "type": "outage",
+        "duration_hours": 7.2,
+        "customers_affected": 48000,
+        "root_cause": "Bushing flashover following partial discharge escalation"
+      },
+      {
+        "incident_id": "INC-2024-0012",
+        "asset_id": "T-103",
+        "occurred_at": "2024-02-11T02:45:00Z",
+        "type": "outage",
+        "duration_hours": 7.2,
+        "customers_affected": 48000,
+        "root_cause": "Bushing flashover following partial discharge escalation"
+      },
+      {
+        "incident_id": "INC-2024-0012",
+        "asset_id": "T-103",
+        "occurred_at": "2024-02-11T02:45:00Z",
+        "type": "outage",
+        "duration_hours": 7.2,
+        "customers_affected": 48000,
+        "root_cause": "Bushing flashover following partial discharge escalation"
+      },
+      {
+        "incident_id": "INC-2024-0012",
+        "asset_id": "T-103",
+        "occurred_at": "2024-02-11T02:45:00Z",
+        "type": "outage",
+        "duration_hours": 7.2,
+        "customers_affected": 48000,
+        "root_cause": "Bushing flashover following partial discharge escalation"
+      },
+      {
+        "incident_id": "INC-2024-0012",
+        "asset_id": "T-103",
+        "occurred_at": "2024-02-11T02:45:00Z",
+        "type": "outage",
+        "duration_hours": 7.2,
+        "customers_affected": 48000,
+        "root_cause": "Bushing flashover following partial discharge escalation"
+      },
+      {
+        "incident_id": "INC-2024-0012",
+        "asset_id": "T-103",
+        "occurred_at": "2024-02-11T02:45:00Z",
+        "type": "outage",
+        "duration_hours": 7.2,
+        "customers_affected": 48000,
+        "root_cause": "Bushing flashover following partial discharge escalation"
+      },
+      {
+        "incident_id": "INC-2024-0012",
+        "asset_id": "T-103",
+        "occurred_at": "2024-02-11T02:45:00Z",
+        "type": "outage",
+        "duration_hours": 7.2,
+        "customers_affected": 48000,
+        "root_cause": "Bushing flashover following partial discharge escalation"
+      },
+      {
+        "incident_id": "INC-2024-0012",
+        "asset_id": "T-103",
+        "occurred_at": "2024-02-11T02:45:00Z",
+        "type": "outage",
+        "duration_hours": 7.2,
+        "customers_affected": 48000,
+        "root_cause": "Bushing flashover following partial discharge escalation"
+      },
+      {
+        "incident_id": "INC-2024-0012",
+        "asset_id": "T-103",
+        "occurred_at": "2024-02-11T02:45:00Z",
+        "type": "outage",
+        "duration_hours": 7.2,
+        "customers_affected": 48000,
+        "root_cause": "Bushing flashover following partial discharge escalation"
+      },
+      {
+        "incident_id": "INC-2024-0012",
+        "asset_id": "T-103",
+        "occurred_at": "2024-02-11T02:45:00Z",
+        "type": "outage",
+        "duration_hours": 7.2,
+        "customers_affected": 48000,
+        "root_cause": "Bushing flashover following partial discharge escalation"
+      },
+      {
+        "incident_id": "INC-2024-0012",
+        "asset_id": "T-103",
+        "occurred_at": "2024-02-11T02:45:00Z",
+        "type": "outage",
+        "duration_hours": 7.2,
+        "customers_affected": 48000,
+        "root_cause": "Bushing flashover following partial discharge escalation"
+      },
+      {
+        "incident_id": "INC-2024-0012",
+        "asset_id": "T-103",
+        "occurred_at": "2024-02-11T02:45:00Z",
+        "type": "outage",
+        "duration_hours": 7.2,
+        "customers_affected": 48000,
+        "root_cause": "Bushing flashover following partial discharge escalation"
+      },
+      {
+        "incident_id": "INC-2024-0012",
+        "asset_id": "T-103",
+        "occurred_at": "2024-02-11T02:45:00Z",
+        "type": "outage",
+        "duration_hours": 7.2,
+        "customers_affected": 48000,
+        "root_cause": "Bushing flashover following partial discharge escalation"
       }
     ]
   },
-  "latest_plan": null
+  "latest_plan": {
+    "generated_at": "2026-09-19T08:07:53.425Z",
+    "planning_horizon_hours": 72,
+    "total_assets_assessed": 16,
+    "critical_assets": [
+      {
+        "asset_id": "TX-001",
+        "asset_name": "North Bay 230/115kV Autotransformer",
+        "asset_type": "transformer",
+        "region": "North Bay",
+        "substation_id": "SUB-NB-01",
+        "overall_risk_score": 99,
+        "failure_probability_7d": 0.99,
+        "health_score": 0,
+        "weather_risk_multiplier": 2.25,
+        "grid_impact_severity": "critical",
+        "estimated_customers_at_risk": 85000,
+        "estimated_outage_cost_usd": 12240000,
+        "risk_drivers": [
+          "High winding temperature 108.0 °C (alarm limit 98 °C)",
+          "Elevated vibration 8.90 mm/s (alarm 7.1 mm/s)",
+          "Severe partial discharge 820 pC — insulation degradation",
+          "Poor oil quality index 28/100 — dielectric failure risk",
+          "Overload condition 118% of rated capacity",
+          "Acetylene (C2H2) detected at 4.2 ppm — immediate flashover hazard",
+          "Asset age 44 years — beyond typical 40-year design life",
+          "Overdue maintenance (5 years since last overhaul)",
+          "Weather amplification ×2.25: wind 85 km/h"
+        ],
+        "recommended_action": "immediate_shutdown",
+        "action_window_hours": 4,
+        "thermal_aging_factor_faa": 0.81,
+        "dga_fault_classification": "High-Energy Electrical Arcing (Flashover Risk)",
+        "contingency_plan": {
+          "backup_substation": "SUB-NB-02",
+          "load_shed_target_mw": 319,
+          "switching_sequence": [
+            "1. Notify Regional Transmission Operator (RTO) of impending de-energization on TX-001.",
+            "2. Arm tie-breaker at SUB-NB-02 to absorb up to 319 MW transfer.",
+            "3. Close tie breaker to parallel bus and balance phase angles.",
+            "4. Open secondary low-voltage breaker on North Bay 230/115kV Autotransformer.",
+            "5. Open high-voltage disconnect switch (230 kV) on TX-001.",
+            "6. Rack out breaker, lock out / tag out (LOTO), and verify zero potential before maintenance handoff."
+          ],
+          "risk_mitigation_notes": "Prevented unnotified interruption for 85,000 customers by pre-switching to SUB-NB-02."
+        },
+        "avoided_loss_potential_usd": 12072600
+      },
+      {
+        "asset_id": "TX-003",
+        "asset_name": "Riverside 500/230kV GSU Transformer",
+        "asset_type": "transformer",
+        "region": "Riverside",
+        "substation_id": "SUB-RS-01",
+        "overall_risk_score": 99,
+        "failure_probability_7d": 0.99,
+        "health_score": 0,
+        "weather_risk_multiplier": 1.3,
+        "grid_impact_severity": "critical",
+        "estimated_customers_at_risk": 210000,
+        "estimated_outage_cost_usd": 30240000,
+        "risk_drivers": [
+          "High winding temperature 103.0 °C (alarm limit 98 °C)",
+          "Severe partial discharge 1150 pC — insulation degradation",
+          "Poor oil quality index 35/100 — dielectric failure risk",
+          "Overload condition 112% of rated capacity",
+          "Acetylene (C2H2) detected at 6.8 ppm — immediate flashover hazard",
+          "Overdue maintenance (4 years since last overhaul)"
+        ],
+        "recommended_action": "immediate_shutdown",
+        "action_window_hours": 4,
+        "thermal_aging_factor_faa": 0.48,
+        "dga_fault_classification": "High-Energy Electrical Arcing (Flashover Risk)",
+        "contingency_plan": {
+          "backup_substation": "SUB-ALT-RIVERSIDE",
+          "load_shed_target_mw": 605,
+          "switching_sequence": [
+            "1. Notify Regional Transmission Operator (RTO) of impending de-energization on TX-003.",
+            "2. Arm tie-breaker at SUB-ALT-RIVERSIDE to absorb up to 605 MW transfer.",
+            "3. Close tie breaker to parallel bus and balance phase angles.",
+            "4. Open secondary low-voltage breaker on Riverside 500/230kV GSU Transformer.",
+            "5. Open high-voltage disconnect switch (500 kV) on TX-003.",
+            "6. Rack out breaker, lock out / tag out (LOTO), and verify zero potential before maintenance handoff."
+          ],
+          "risk_mitigation_notes": "Prevented unnotified interruption for 2,10,000 customers by pre-switching to SUB-ALT-RIVERSIDE."
+        },
+        "avoided_loss_potential_usd": 29892600
+      },
+      {
+        "asset_id": "TX-006",
+        "asset_name": "South Shore 33/11kV Step-down Xfmr",
+        "asset_type": "transformer",
+        "region": "South Shore",
+        "substation_id": "SUB-SS-05",
+        "overall_risk_score": 99,
+        "failure_probability_7d": 0.99,
+        "health_score": 48,
+        "weather_risk_multiplier": 3,
+        "grid_impact_severity": "critical",
+        "estimated_customers_at_risk": 9800,
+        "estimated_outage_cost_usd": 1411200,
+        "risk_drivers": [
+          "Elevated vibration 7.60 mm/s (alarm 7.1 mm/s)",
+          "Elevated partial discharge 430 pC",
+          "Poor oil quality index 22/100 — dielectric failure risk",
+          "Asset age 48 years — beyond typical 40-year design life",
+          "Overdue maintenance (7 years since last overhaul)",
+          "Weather amplification ×3: active storm warning, high lightning, wind 110 km/h"
+        ],
+        "recommended_action": "immediate_shutdown",
+        "action_window_hours": 4,
+        "thermal_aging_factor_faa": 0.13,
+        "dga_fault_classification": "Guarded Dissolved Gas",
+        "contingency_plan": {
+          "backup_substation": "SUB-ALT-SOUTHSHORE",
+          "load_shed_target_mw": 37,
+          "switching_sequence": [
+            "1. Notify Regional Transmission Operator (RTO) of impending de-energization on TX-006.",
+            "2. Arm tie-breaker at SUB-ALT-SOUTHSHORE to absorb up to 37 MW transfer.",
+            "3. Close tie breaker to parallel bus and balance phase angles.",
+            "4. Open secondary low-voltage breaker on South Shore 33/11kV Step-down Xfmr.",
+            "5. Open high-voltage disconnect switch (33 kV) on TX-006.",
+            "6. Rack out breaker, lock out / tag out (LOTO), and verify zero potential before maintenance handoff."
+          ],
+          "risk_mitigation_notes": "Prevented unnotified interruption for 9,800 customers by pre-switching to SUB-ALT-SOUTHSHORE."
+        },
+        "avoided_loss_potential_usd": 1352088
+      },
+      {
+        "asset_id": "LN-001",
+        "asset_name": "North Bay–Eastport 115kV Transmission Line",
+        "asset_type": "line",
+        "region": "North Bay",
+        "substation_id": "SUB-NB-01",
+        "overall_risk_score": 99,
+        "failure_probability_7d": 0.99,
+        "health_score": 80,
+        "weather_risk_multiplier": 2.25,
+        "grid_impact_severity": "critical",
+        "estimated_customers_at_risk": 107000,
+        "estimated_outage_cost_usd": 15408000,
+        "risk_drivers": [
+          "Elevated partial discharge 220 pC",
+          "Asset age 52 years — beyond typical 40-year design life",
+          "Overdue maintenance (5 years since last overhaul)",
+          "Weather amplification ×2.25: wind 85 km/h"
+        ],
+        "recommended_action": "immediate_shutdown",
+        "action_window_hours": 4,
+        "thermal_aging_factor_faa": 0.01,
+        "dga_fault_classification": "Normal Dissolved Gas",
+        "contingency_plan": {
+          "backup_substation": "SUB-ALT-NORTHBAY",
+          "load_shed_target_mw": 160,
+          "switching_sequence": [
+            "1. Notify Regional Transmission Operator (RTO) of impending de-energization on LN-001.",
+            "2. Arm tie-breaker at SUB-ALT-NORTHBAY to absorb up to 160 MW transfer.",
+            "3. Close tie breaker to parallel bus and balance phase angles.",
+            "4. Open secondary low-voltage breaker on North Bay–Eastport 115kV Transmission Line.",
+            "5. Open high-voltage disconnect switch (115 kV) on LN-001.",
+            "6. Rack out breaker, lock out / tag out (LOTO), and verify zero potential before maintenance handoff."
+          ],
+          "risk_mitigation_notes": "Prevented unnotified interruption for 1,07,000 customers by pre-switching to SUB-ALT-NORTHBAY."
+        },
+        "avoided_loss_potential_usd": 15208920
+      },
+      {
+        "asset_id": "T-101",
+        "asset_name": "North Bay 230/115kV Autotransformer",
+        "asset_type": "transformer",
+        "region": "North Bay",
+        "substation_id": "SUB-NB-01",
+        "overall_risk_score": 99,
+        "failure_probability_7d": 0.99,
+        "health_score": 0,
+        "weather_risk_multiplier": 2.25,
+        "grid_impact_severity": "critical",
+        "estimated_customers_at_risk": 85000,
+        "estimated_outage_cost_usd": 12240000,
+        "risk_drivers": [
+          "High winding temperature 108.0 °C (alarm limit 98 °C)",
+          "Elevated vibration 8.90 mm/s (alarm 7.1 mm/s)",
+          "Severe partial discharge 820 pC — insulation degradation",
+          "Poor oil quality index 28/100 — dielectric failure risk",
+          "Overload condition 118% of rated capacity",
+          "Acetylene (C2H2) detected at 4.2 ppm — immediate flashover hazard",
+          "Asset age 44 years — beyond typical 40-year design life",
+          "Overdue maintenance (5 years since last overhaul)",
+          "Weather amplification ×2.25: wind 85 km/h"
+        ],
+        "recommended_action": "immediate_shutdown",
+        "action_window_hours": 4,
+        "thermal_aging_factor_faa": 0.81,
+        "dga_fault_classification": "High-Energy Electrical Arcing (Flashover Risk)",
+        "contingency_plan": {
+          "backup_substation": "SUB-NB-02",
+          "load_shed_target_mw": 319,
+          "switching_sequence": [
+            "1. Notify Regional Transmission Operator (RTO) of impending de-energization on T-101.",
+            "2. Arm tie-breaker at SUB-NB-02 to absorb up to 319 MW transfer.",
+            "3. Close tie breaker to parallel bus and balance phase angles.",
+            "4. Open secondary low-voltage breaker on North Bay 230/115kV Autotransformer.",
+            "5. Open high-voltage disconnect switch (230 kV) on T-101.",
+            "6. Rack out breaker, lock out / tag out (LOTO), and verify zero potential before maintenance handoff."
+          ],
+          "risk_mitigation_notes": "Prevented unnotified interruption for 85,000 customers by pre-switching to SUB-NB-02."
+        },
+        "avoided_loss_potential_usd": 12072600
+      },
+      {
+        "asset_id": "T-103",
+        "asset_name": "Riverside 500/230kV GSU Transformer",
+        "asset_type": "transformer",
+        "region": "Riverside",
+        "substation_id": "SUB-RS-01",
+        "overall_risk_score": 99,
+        "failure_probability_7d": 0.99,
+        "health_score": 0,
+        "weather_risk_multiplier": 1.3,
+        "grid_impact_severity": "critical",
+        "estimated_customers_at_risk": 210000,
+        "estimated_outage_cost_usd": 30240000,
+        "risk_drivers": [
+          "High winding temperature 103.0 °C (alarm limit 98 °C)",
+          "Severe partial discharge 1150 pC — insulation degradation",
+          "Poor oil quality index 35/100 — dielectric failure risk",
+          "Overload condition 112% of rated capacity",
+          "Acetylene (C2H2) detected at 6.8 ppm — immediate flashover hazard",
+          "Overdue maintenance (4 years since last overhaul)"
+        ],
+        "recommended_action": "immediate_shutdown",
+        "action_window_hours": 4,
+        "thermal_aging_factor_faa": 0.48,
+        "dga_fault_classification": "High-Energy Electrical Arcing (Flashover Risk)",
+        "contingency_plan": {
+          "backup_substation": "SUB-ALT-RIVERSIDE",
+          "load_shed_target_mw": 605,
+          "switching_sequence": [
+            "1. Notify Regional Transmission Operator (RTO) of impending de-energization on T-103.",
+            "2. Arm tie-breaker at SUB-ALT-RIVERSIDE to absorb up to 605 MW transfer.",
+            "3. Close tie breaker to parallel bus and balance phase angles.",
+            "4. Open secondary low-voltage breaker on Riverside 500/230kV GSU Transformer.",
+            "5. Open high-voltage disconnect switch (500 kV) on T-103.",
+            "6. Rack out breaker, lock out / tag out (LOTO), and verify zero potential before maintenance handoff."
+          ],
+          "risk_mitigation_notes": "Prevented unnotified interruption for 2,10,000 customers by pre-switching to SUB-ALT-RIVERSIDE."
+        },
+        "avoided_loss_potential_usd": 29892600
+      },
+      {
+        "asset_id": "CB-001",
+        "asset_name": "North Bay 230kV Bus Tie Breaker",
+        "asset_type": "breaker",
+        "region": "North Bay",
+        "substation_id": "SUB-NB-01",
+        "overall_risk_score": 91,
+        "failure_probability_7d": 0.908,
+        "health_score": 71,
+        "weather_risk_multiplier": 2.25,
+        "grid_impact_severity": "critical",
+        "estimated_customers_at_risk": 85000,
+        "estimated_outage_cost_usd": 12240000,
+        "risk_drivers": [
+          "Elevated vibration 9.40 mm/s (alarm 7.1 mm/s)",
+          "Elevated partial discharge 280 pC",
+          "Overdue maintenance (5 years since last overhaul)",
+          "Weather amplification ×2.25: wind 85 km/h"
+        ],
+        "recommended_action": "immediate_shutdown",
+        "action_window_hours": 4,
+        "thermal_aging_factor_faa": 0,
+        "dga_fault_classification": "Normal Dissolved Gas",
+        "contingency_plan": {
+          "backup_substation": "SUB-ALT-NORTHBAY",
+          "load_shed_target_mw": 0,
+          "switching_sequence": [
+            "1. Notify Regional Transmission Operator (RTO) of impending de-energization on CB-001.",
+            "2. Arm tie-breaker at SUB-ALT-NORTHBAY to absorb up to 0 MW transfer.",
+            "3. Close tie breaker to parallel bus and balance phase angles.",
+            "4. Open secondary low-voltage breaker on North Bay 230kV Bus Tie Breaker.",
+            "5. Open high-voltage disconnect switch (230 kV) on CB-001.",
+            "6. Rack out breaker, lock out / tag out (LOTO), and verify zero potential before maintenance handoff."
+          ],
+          "risk_mitigation_notes": "Prevented unnotified interruption for 85,000 customers by pre-switching to SUB-ALT-NORTHBAY."
+        },
+        "avoided_loss_potential_usd": 11068920
+      },
+      {
+        "asset_id": "SUB-001",
+        "asset_name": "North Bay 230kV Main Substation",
+        "asset_type": "substation",
+        "region": "North Bay",
+        "substation_id": "SUB-NB-01",
+        "overall_risk_score": 57,
+        "failure_probability_7d": 0.575,
+        "health_score": 87,
+        "weather_risk_multiplier": 2.25,
+        "grid_impact_severity": "critical",
+        "estimated_customers_at_risk": 95000,
+        "estimated_outage_cost_usd": 13680000,
+        "risk_drivers": [
+          "Elevated partial discharge 145 pC",
+          "Overdue maintenance (4 years since last overhaul)",
+          "Weather amplification ×2.25: wind 85 km/h"
+        ],
+        "recommended_action": "immediate_shutdown",
+        "action_window_hours": 4,
+        "thermal_aging_factor_faa": 0.01,
+        "dga_fault_classification": "Normal Dissolved Gas",
+        "contingency_plan": {
+          "backup_substation": "SUB-ALT-NORTHBAY",
+          "load_shed_target_mw": 443,
+          "switching_sequence": [
+            "1. Notify Regional Transmission Operator (RTO) of impending de-energization on SUB-001.",
+            "2. Arm tie-breaker at SUB-ALT-NORTHBAY to absorb up to 443 MW transfer.",
+            "3. Close tie breaker to parallel bus and balance phase angles.",
+            "4. Open secondary low-voltage breaker on North Bay 230kV Main Substation.",
+            "5. Open high-voltage disconnect switch (230 kV) on SUB-001.",
+            "6. Rack out breaker, lock out / tag out (LOTO), and verify zero potential before maintenance handoff."
+          ],
+          "risk_mitigation_notes": "Prevented unnotified interruption for 95,000 customers by pre-switching to SUB-ALT-NORTHBAY."
+        },
+        "avoided_loss_potential_usd": 7821000
+      }
+    ],
+    "high_assets": [
+      {
+        "asset_id": "CB-002",
+        "asset_name": "Riverside 500kV Main Bus Breaker",
+        "asset_type": "breaker",
+        "region": "Riverside",
+        "substation_id": "SUB-RS-01",
+        "overall_risk_score": 9,
+        "failure_probability_7d": 0.093,
+        "health_score": 100,
+        "weather_risk_multiplier": 1.3,
+        "grid_impact_severity": "high",
+        "estimated_customers_at_risk": 210000,
+        "estimated_outage_cost_usd": 18900000,
+        "risk_drivers": [
+          "Overdue maintenance (3 years since last overhaul)"
+        ],
+        "recommended_action": "emergency_inspection",
+        "action_window_hours": 12,
+        "thermal_aging_factor_faa": 0,
+        "dga_fault_classification": "Normal Dissolved Gas",
+        "contingency_plan": {
+          "backup_substation": "SUB-ALT-RIVERSIDE",
+          "load_shed_target_mw": 0,
+          "switching_sequence": [
+            "1. Notify Regional Transmission Operator (RTO) of impending de-energization on CB-002.",
+            "2. Arm tie-breaker at SUB-ALT-RIVERSIDE to absorb up to 0 MW transfer.",
+            "3. Close tie breaker to parallel bus and balance phase angles.",
+            "4. Open secondary low-voltage breaker on Riverside 500kV Main Bus Breaker.",
+            "5. Open high-voltage disconnect switch (500 kV) on CB-002.",
+            "6. Rack out breaker, lock out / tag out (LOTO), and verify zero potential before maintenance handoff."
+          ],
+          "risk_mitigation_notes": "Prevented unnotified interruption for 2,10,000 customers by pre-switching to SUB-ALT-RIVERSIDE."
+        },
+        "avoided_loss_potential_usd": 1739700
+      }
+    ],
+    "medium_assets": [
+      {
+        "asset_id": "TX-004",
+        "asset_name": "Central Valley 115/12kV Distribution Xfmr",
+        "asset_type": "transformer",
+        "region": "Central Valley",
+        "substation_id": "SUB-CV-03",
+        "overall_risk_score": 15,
+        "failure_probability_7d": 0.151,
+        "health_score": 93,
+        "weather_risk_multiplier": 1.3,
+        "grid_impact_severity": "medium",
+        "estimated_customers_at_risk": 14000,
+        "estimated_outage_cost_usd": 756000,
+        "risk_drivers": [
+          "Overdue maintenance (4 years since last overhaul)"
+        ],
+        "recommended_action": "scheduled_inspection",
+        "action_window_hours": 72,
+        "thermal_aging_factor_faa": 0.03,
+        "dga_fault_classification": "Normal Dissolved Gas",
+        "contingency_plan": {
+          "backup_substation": "SUB-ALT-CENTRALVALLEY",
+          "load_shed_target_mw": 0,
+          "switching_sequence": [
+            "1. Log preventive maintenance request in EMS/SCADA.",
+            "2. Verify backup circuit availability at SUB-ALT-CENTRALVALLEY prior to scheduled maintenance."
+          ],
+          "risk_mitigation_notes": "Normal operational posture; standby feeder available if needed."
+        },
+        "avoided_loss_potential_usd": 109156
+      },
+      {
+        "asset_id": "T-104",
+        "asset_name": "Central Valley 115/12kV Distribution Xfmr",
+        "asset_type": "transformer",
+        "region": "Central Valley",
+        "substation_id": "SUB-CV-03",
+        "overall_risk_score": 15,
+        "failure_probability_7d": 0.151,
+        "health_score": 93,
+        "weather_risk_multiplier": 1.3,
+        "grid_impact_severity": "medium",
+        "estimated_customers_at_risk": 14000,
+        "estimated_outage_cost_usd": 756000,
+        "risk_drivers": [
+          "Overdue maintenance (4 years since last overhaul)"
+        ],
+        "recommended_action": "scheduled_inspection",
+        "action_window_hours": 72,
+        "thermal_aging_factor_faa": 0.03,
+        "dga_fault_classification": "Normal Dissolved Gas",
+        "contingency_plan": {
+          "backup_substation": "SUB-ALT-CENTRALVALLEY",
+          "load_shed_target_mw": 0,
+          "switching_sequence": [
+            "1. Log preventive maintenance request in EMS/SCADA.",
+            "2. Verify backup circuit availability at SUB-ALT-CENTRALVALLEY prior to scheduled maintenance."
+          ],
+          "risk_mitigation_notes": "Normal operational posture; standby feeder available if needed."
+        },
+        "avoided_loss_potential_usd": 109156
+      },
+      {
+        "asset_id": "TX-002",
+        "asset_name": "Eastport 115/33kV Power Transformer",
+        "asset_type": "transformer",
+        "region": "Eastport",
+        "substation_id": "SUB-EP-02",
+        "overall_risk_score": 9,
+        "failure_probability_7d": 0.085,
+        "health_score": 89,
+        "weather_risk_multiplier": 1,
+        "grid_impact_severity": "medium",
+        "estimated_customers_at_risk": 22000,
+        "estimated_outage_cost_usd": 1188000,
+        "risk_drivers": [
+          "Overdue maintenance (3 years since last overhaul)"
+        ],
+        "recommended_action": "scheduled_inspection",
+        "action_window_hours": 72,
+        "thermal_aging_factor_faa": 0.02,
+        "dga_fault_classification": "Normal Dissolved Gas",
+        "contingency_plan": {
+          "backup_substation": "SUB-EP-01",
+          "load_shed_target_mw": 0,
+          "switching_sequence": [
+            "1. Log preventive maintenance request in EMS/SCADA.",
+            "2. Verify backup circuit availability at SUB-EP-01 prior to scheduled maintenance."
+          ],
+          "risk_mitigation_notes": "Normal operational posture; standby feeder available if needed."
+        },
+        "avoided_loss_potential_usd": 95980
+      },
+      {
+        "asset_id": "T-102",
+        "asset_name": "Eastport 115/33kV Power Transformer",
+        "asset_type": "transformer",
+        "region": "Eastport",
+        "substation_id": "SUB-EP-02",
+        "overall_risk_score": 9,
+        "failure_probability_7d": 0.085,
+        "health_score": 89,
+        "weather_risk_multiplier": 1,
+        "grid_impact_severity": "medium",
+        "estimated_customers_at_risk": 22000,
+        "estimated_outage_cost_usd": 1188000,
+        "risk_drivers": [
+          "Overdue maintenance (3 years since last overhaul)"
+        ],
+        "recommended_action": "scheduled_inspection",
+        "action_window_hours": 72,
+        "thermal_aging_factor_faa": 0.02,
+        "dga_fault_classification": "Normal Dissolved Gas",
+        "contingency_plan": {
+          "backup_substation": "SUB-EP-01",
+          "load_shed_target_mw": 0,
+          "switching_sequence": [
+            "1. Log preventive maintenance request in EMS/SCADA.",
+            "2. Verify backup circuit availability at SUB-EP-01 prior to scheduled maintenance."
+          ],
+          "risk_mitigation_notes": "Normal operational posture; standby feeder available if needed."
+        },
+        "avoided_loss_potential_usd": 95980
+      },
+      {
+        "asset_id": "TX-007",
+        "asset_name": "Eastport Medical Centre Feeder Xfmr",
+        "asset_type": "transformer",
+        "region": "Eastport",
+        "substation_id": "SUB-EP-01",
+        "overall_risk_score": 6,
+        "failure_probability_7d": 0.064,
+        "health_score": 100,
+        "weather_risk_multiplier": 1,
+        "grid_impact_severity": "medium",
+        "estimated_customers_at_risk": 1200,
+        "estimated_outage_cost_usd": 64800,
+        "risk_drivers": [
+          "Overdue maintenance (3 years since last overhaul)"
+        ],
+        "recommended_action": "scheduled_inspection",
+        "action_window_hours": 72,
+        "thermal_aging_factor_faa": 0,
+        "dga_fault_classification": "Normal Dissolved Gas",
+        "contingency_plan": {
+          "backup_substation": "SUB-ALT-EASTPORT",
+          "load_shed_target_mw": 0,
+          "switching_sequence": [
+            "1. Log preventive maintenance request in EMS/SCADA.",
+            "2. Verify backup circuit availability at SUB-ALT-EASTPORT prior to scheduled maintenance."
+          ],
+          "risk_mitigation_notes": "Normal operational posture; standby feeder available if needed."
+        },
+        "avoided_loss_potential_usd": 0
+      },
+      {
+        "asset_id": "TX-008",
+        "asset_name": "Central Valley Irrigation Pump Transformer",
+        "asset_type": "transformer",
+        "region": "Central Valley",
+        "substation_id": "SUB-CV-05",
+        "overall_risk_score": 6,
+        "failure_probability_7d": 0.056,
+        "health_score": 100,
+        "weather_risk_multiplier": 1.3,
+        "grid_impact_severity": "medium",
+        "estimated_customers_at_risk": 450,
+        "estimated_outage_cost_usd": 24300,
+        "risk_drivers": [
+          "Overdue maintenance (2 years since last overhaul)"
+        ],
+        "recommended_action": "scheduled_inspection",
+        "action_window_hours": 72,
+        "thermal_aging_factor_faa": 0,
+        "dga_fault_classification": "Normal Dissolved Gas",
+        "contingency_plan": {
+          "backup_substation": "SUB-ALT-CENTRALVALLEY",
+          "load_shed_target_mw": 0,
+          "switching_sequence": [
+            "1. Log preventive maintenance request in EMS/SCADA.",
+            "2. Verify backup circuit availability at SUB-ALT-CENTRALVALLEY prior to scheduled maintenance."
+          ],
+          "risk_mitigation_notes": "Normal operational posture; standby feeder available if needed."
+        },
+        "avoided_loss_potential_usd": 0
+      },
+      {
+        "asset_id": "TX-005",
+        "asset_name": "Riverside Industrial Park Transformer",
+        "asset_type": "transformer",
+        "region": "Riverside",
+        "substation_id": "SUB-RS-03",
+        "overall_risk_score": 4,
+        "failure_probability_7d": 0.044,
+        "health_score": 100,
+        "weather_risk_multiplier": 1.3,
+        "grid_impact_severity": "medium",
+        "estimated_customers_at_risk": 3200,
+        "estimated_outage_cost_usd": 172800,
+        "risk_drivers": [
+          "Overdue maintenance (2 years since last overhaul)"
+        ],
+        "recommended_action": "scheduled_inspection",
+        "action_window_hours": 72,
+        "thermal_aging_factor_faa": 0,
+        "dga_fault_classification": "Normal Dissolved Gas",
+        "contingency_plan": {
+          "backup_substation": "SUB-ALT-RIVERSIDE",
+          "load_shed_target_mw": 0,
+          "switching_sequence": [
+            "1. Log preventive maintenance request in EMS/SCADA.",
+            "2. Verify backup circuit availability at SUB-ALT-RIVERSIDE prior to scheduled maintenance."
+          ],
+          "risk_mitigation_notes": "Normal operational posture; standby feeder available if needed."
+        },
+        "avoided_loss_potential_usd": 2603
+      }
+    ],
+    "low_assets": [],
+    "crew_assignments": [
+      {
+        "priority_rank": 1,
+        "asset_id": "TX-001",
+        "asset_name": "North Bay 230/115kV Autotransformer",
+        "region": "North Bay",
+        "action": "immediate_shutdown",
+        "crew_type": "emergency",
+        "estimated_crew_size": 4,
+        "latest_start_time": "2026-09-19T12:07:53.425Z",
+        "estimated_duration_hours": 6,
+        "required_certifications": [
+          "OSHA 1910.269 HV Switching Qualified",
+          "Certified Master Lineman",
+          "Substation Relay Specialist"
+        ],
+        "safety_precautions": [
+          "Establish equipotential zone grounding prior to physical contact.",
+          "Strict Lockout/Tagout (LOTO) clearance protocol with regional dispatch.",
+          "Maintain minimum approach boundary (10 ft for 115kV, 15 ft for 230kV, 26 ft for 500kV)."
+        ],
+        "switching_recommendation": "Backup feeder: SUB-NB-02 | Shed target: 319 MW",
+        "notes": "Risk Score: 99/100 | 7-Day Failure: 99.0% | Weather Amplification: ×2.25 | DGA: High-Energy Electrical Arcing (Flashover Risk) | Thermal Aging: 0.81× | Customers: 85,000 | Est. Outage Loss: $12.24M"
+      },
+      {
+        "priority_rank": 2,
+        "asset_id": "TX-003",
+        "asset_name": "Riverside 500/230kV GSU Transformer",
+        "region": "Riverside",
+        "action": "immediate_shutdown",
+        "crew_type": "emergency",
+        "estimated_crew_size": 4,
+        "latest_start_time": "2026-09-19T12:07:53.425Z",
+        "estimated_duration_hours": 6,
+        "required_certifications": [
+          "OSHA 1910.269 HV Switching Qualified",
+          "Certified Master Lineman",
+          "Substation Relay Specialist"
+        ],
+        "safety_precautions": [
+          "Establish equipotential zone grounding prior to physical contact.",
+          "Strict Lockout/Tagout (LOTO) clearance protocol with regional dispatch.",
+          "Maintain minimum approach boundary (10 ft for 115kV, 15 ft for 230kV, 26 ft for 500kV)."
+        ],
+        "switching_recommendation": "Backup feeder: SUB-ALT-RIVERSIDE | Shed target: 605 MW",
+        "notes": "Risk Score: 99/100 | 7-Day Failure: 99.0% | Weather Amplification: ×1.3 | DGA: High-Energy Electrical Arcing (Flashover Risk) | Thermal Aging: 0.48× | Customers: 2,10,000 | Est. Outage Loss: $30.24M"
+      },
+      {
+        "priority_rank": 3,
+        "asset_id": "TX-006",
+        "asset_name": "South Shore 33/11kV Step-down Xfmr",
+        "region": "South Shore",
+        "action": "immediate_shutdown",
+        "crew_type": "emergency",
+        "estimated_crew_size": 4,
+        "latest_start_time": "2026-09-19T12:07:53.425Z",
+        "estimated_duration_hours": 6,
+        "required_certifications": [
+          "OSHA 1910.269 HV Switching Qualified",
+          "Certified Master Lineman",
+          "Substation Relay Specialist"
+        ],
+        "safety_precautions": [
+          "Establish equipotential zone grounding prior to physical contact.",
+          "Strict Lockout/Tagout (LOTO) clearance protocol with regional dispatch.",
+          "Maintain minimum approach boundary (10 ft for 115kV, 15 ft for 230kV, 26 ft for 500kV)."
+        ],
+        "switching_recommendation": "Backup feeder: SUB-ALT-SOUTHSHORE | Shed target: 37 MW",
+        "notes": "Risk Score: 99/100 | 7-Day Failure: 99.0% | Weather Amplification: ×3 | DGA: Guarded Dissolved Gas | Thermal Aging: 0.13× | Customers: 9,800 | Est. Outage Loss: $1.41M"
+      },
+      {
+        "priority_rank": 4,
+        "asset_id": "LN-001",
+        "asset_name": "North Bay–Eastport 115kV Transmission Line",
+        "region": "North Bay",
+        "action": "immediate_shutdown",
+        "crew_type": "emergency",
+        "estimated_crew_size": 4,
+        "latest_start_time": "2026-09-19T12:07:53.425Z",
+        "estimated_duration_hours": 6,
+        "required_certifications": [
+          "OSHA 1910.269 HV Switching Qualified",
+          "Certified Master Lineman",
+          "Substation Relay Specialist"
+        ],
+        "safety_precautions": [
+          "Establish equipotential zone grounding prior to physical contact.",
+          "Strict Lockout/Tagout (LOTO) clearance protocol with regional dispatch.",
+          "Maintain minimum approach boundary (10 ft for 115kV, 15 ft for 230kV, 26 ft for 500kV)."
+        ],
+        "switching_recommendation": "Backup feeder: SUB-ALT-NORTHBAY | Shed target: 160 MW",
+        "notes": "Risk Score: 99/100 | 7-Day Failure: 99.0% | Weather Amplification: ×2.25 | DGA: Normal Dissolved Gas | Thermal Aging: 0.01× | Customers: 1,07,000 | Est. Outage Loss: $15.41M"
+      },
+      {
+        "priority_rank": 5,
+        "asset_id": "T-101",
+        "asset_name": "North Bay 230/115kV Autotransformer",
+        "region": "North Bay",
+        "action": "immediate_shutdown",
+        "crew_type": "emergency",
+        "estimated_crew_size": 4,
+        "latest_start_time": "2026-09-19T12:07:53.425Z",
+        "estimated_duration_hours": 6,
+        "required_certifications": [
+          "OSHA 1910.269 HV Switching Qualified",
+          "Certified Master Lineman",
+          "Substation Relay Specialist"
+        ],
+        "safety_precautions": [
+          "Establish equipotential zone grounding prior to physical contact.",
+          "Strict Lockout/Tagout (LOTO) clearance protocol with regional dispatch.",
+          "Maintain minimum approach boundary (10 ft for 115kV, 15 ft for 230kV, 26 ft for 500kV)."
+        ],
+        "switching_recommendation": "Backup feeder: SUB-NB-02 | Shed target: 319 MW",
+        "notes": "Risk Score: 99/100 | 7-Day Failure: 99.0% | Weather Amplification: ×2.25 | DGA: High-Energy Electrical Arcing (Flashover Risk) | Thermal Aging: 0.81× | Customers: 85,000 | Est. Outage Loss: $12.24M"
+      },
+      {
+        "priority_rank": 6,
+        "asset_id": "T-103",
+        "asset_name": "Riverside 500/230kV GSU Transformer",
+        "region": "Riverside",
+        "action": "immediate_shutdown",
+        "crew_type": "emergency",
+        "estimated_crew_size": 4,
+        "latest_start_time": "2026-09-19T12:07:53.425Z",
+        "estimated_duration_hours": 6,
+        "required_certifications": [
+          "OSHA 1910.269 HV Switching Qualified",
+          "Certified Master Lineman",
+          "Substation Relay Specialist"
+        ],
+        "safety_precautions": [
+          "Establish equipotential zone grounding prior to physical contact.",
+          "Strict Lockout/Tagout (LOTO) clearance protocol with regional dispatch.",
+          "Maintain minimum approach boundary (10 ft for 115kV, 15 ft for 230kV, 26 ft for 500kV)."
+        ],
+        "switching_recommendation": "Backup feeder: SUB-ALT-RIVERSIDE | Shed target: 605 MW",
+        "notes": "Risk Score: 99/100 | 7-Day Failure: 99.0% | Weather Amplification: ×1.3 | DGA: High-Energy Electrical Arcing (Flashover Risk) | Thermal Aging: 0.48× | Customers: 2,10,000 | Est. Outage Loss: $30.24M"
+      },
+      {
+        "priority_rank": 7,
+        "asset_id": "CB-001",
+        "asset_name": "North Bay 230kV Bus Tie Breaker",
+        "region": "North Bay",
+        "action": "immediate_shutdown",
+        "crew_type": "emergency",
+        "estimated_crew_size": 4,
+        "latest_start_time": "2026-09-19T12:07:53.425Z",
+        "estimated_duration_hours": 6,
+        "required_certifications": [
+          "OSHA 1910.269 HV Switching Qualified",
+          "Certified Master Lineman",
+          "Substation Relay Specialist"
+        ],
+        "safety_precautions": [
+          "Establish equipotential zone grounding prior to physical contact.",
+          "Strict Lockout/Tagout (LOTO) clearance protocol with regional dispatch.",
+          "Maintain minimum approach boundary (10 ft for 115kV, 15 ft for 230kV, 26 ft for 500kV)."
+        ],
+        "switching_recommendation": "Backup feeder: SUB-ALT-NORTHBAY | Shed target: 0 MW",
+        "notes": "Risk Score: 91/100 | 7-Day Failure: 90.8% | Weather Amplification: ×2.25 | DGA: Normal Dissolved Gas | Customers: 85,000 | Est. Outage Loss: $12.24M"
+      },
+      {
+        "priority_rank": 8,
+        "asset_id": "SUB-001",
+        "asset_name": "North Bay 230kV Main Substation",
+        "region": "North Bay",
+        "action": "immediate_shutdown",
+        "crew_type": "emergency",
+        "estimated_crew_size": 4,
+        "latest_start_time": "2026-09-19T12:07:53.425Z",
+        "estimated_duration_hours": 6,
+        "required_certifications": [
+          "OSHA 1910.269 HV Switching Qualified",
+          "Certified Master Lineman",
+          "Substation Relay Specialist"
+        ],
+        "safety_precautions": [
+          "Establish equipotential zone grounding prior to physical contact.",
+          "Strict Lockout/Tagout (LOTO) clearance protocol with regional dispatch.",
+          "Maintain minimum approach boundary (10 ft for 115kV, 15 ft for 230kV, 26 ft for 500kV)."
+        ],
+        "switching_recommendation": "Backup feeder: SUB-ALT-NORTHBAY | Shed target: 443 MW",
+        "notes": "Risk Score: 57/100 | 7-Day Failure: 57.5% | Weather Amplification: ×2.25 | DGA: Normal Dissolved Gas | Thermal Aging: 0.01× | Customers: 95,000 | Est. Outage Loss: $13.68M"
+      },
+      {
+        "priority_rank": 9,
+        "asset_id": "CB-002",
+        "asset_name": "Riverside 500kV Main Bus Breaker",
+        "region": "Riverside",
+        "action": "emergency_inspection",
+        "crew_type": "inspection",
+        "estimated_crew_size": 3,
+        "latest_start_time": "2026-09-19T20:07:53.425Z",
+        "estimated_duration_hours": 4,
+        "required_certifications": [
+          "Level II Thermographer (ASNT)",
+          "CIGRE Transformer Diagnostic Specialist"
+        ],
+        "safety_precautions": [
+          "Non-contact thermal scanning from designated ground safety perimeter.",
+          "Continuous atmospheric combustible gas monitoring if entering transformer bund."
+        ],
+        "switching_recommendation": "Backup feeder: SUB-ALT-RIVERSIDE | Shed target: 0 MW",
+        "notes": "Risk Score: 9/100 | 7-Day Failure: 9.3% | Weather Amplification: ×1.3 | DGA: Normal Dissolved Gas | Customers: 2,10,000 | Est. Outage Loss: $18.90M"
+      },
+      {
+        "priority_rank": 10,
+        "asset_id": "TX-004",
+        "asset_name": "Central Valley 115/12kV Distribution Xfmr",
+        "region": "Central Valley",
+        "action": "scheduled_inspection",
+        "crew_type": "maintenance",
+        "estimated_crew_size": 2,
+        "latest_start_time": "2026-09-22T08:07:53.425Z",
+        "estimated_duration_hours": 3,
+        "required_certifications": [
+          "Substation Maintenance Technician",
+          "Laboratory Dielectric Analyst"
+        ],
+        "safety_precautions": [
+          "Coordinate scheduled feeder outage window with load balancing team.",
+          "Collect fluid samples following ASTM D923 airtight syringe procedures."
+        ],
+        "switching_recommendation": "Backup feeder: SUB-ALT-CENTRALVALLEY | Shed target: 0 MW",
+        "notes": "Risk Score: 15/100 | 7-Day Failure: 15.1% | Weather Amplification: ×1.3 | DGA: Normal Dissolved Gas | Thermal Aging: 0.03× | Customers: 14,000 | Est. Outage Loss: $0.76M"
+      },
+      {
+        "priority_rank": 11,
+        "asset_id": "T-104",
+        "asset_name": "Central Valley 115/12kV Distribution Xfmr",
+        "region": "Central Valley",
+        "action": "scheduled_inspection",
+        "crew_type": "maintenance",
+        "estimated_crew_size": 2,
+        "latest_start_time": "2026-09-22T08:07:53.425Z",
+        "estimated_duration_hours": 3,
+        "required_certifications": [
+          "Substation Maintenance Technician",
+          "Laboratory Dielectric Analyst"
+        ],
+        "safety_precautions": [
+          "Coordinate scheduled feeder outage window with load balancing team.",
+          "Collect fluid samples following ASTM D923 airtight syringe procedures."
+        ],
+        "switching_recommendation": "Backup feeder: SUB-ALT-CENTRALVALLEY | Shed target: 0 MW",
+        "notes": "Risk Score: 15/100 | 7-Day Failure: 15.1% | Weather Amplification: ×1.3 | DGA: Normal Dissolved Gas | Thermal Aging: 0.03× | Customers: 14,000 | Est. Outage Loss: $0.76M"
+      },
+      {
+        "priority_rank": 12,
+        "asset_id": "TX-002",
+        "asset_name": "Eastport 115/33kV Power Transformer",
+        "region": "Eastport",
+        "action": "scheduled_inspection",
+        "crew_type": "maintenance",
+        "estimated_crew_size": 2,
+        "latest_start_time": "2026-09-22T08:07:53.425Z",
+        "estimated_duration_hours": 3,
+        "required_certifications": [
+          "Substation Maintenance Technician",
+          "Laboratory Dielectric Analyst"
+        ],
+        "safety_precautions": [
+          "Coordinate scheduled feeder outage window with load balancing team.",
+          "Collect fluid samples following ASTM D923 airtight syringe procedures."
+        ],
+        "switching_recommendation": "Backup feeder: SUB-EP-01 | Shed target: 0 MW",
+        "notes": "Risk Score: 9/100 | 7-Day Failure: 8.5% | DGA: Normal Dissolved Gas | Thermal Aging: 0.02× | Customers: 22,000 | Est. Outage Loss: $1.19M"
+      },
+      {
+        "priority_rank": 13,
+        "asset_id": "T-102",
+        "asset_name": "Eastport 115/33kV Power Transformer",
+        "region": "Eastport",
+        "action": "scheduled_inspection",
+        "crew_type": "maintenance",
+        "estimated_crew_size": 2,
+        "latest_start_time": "2026-09-22T08:07:53.425Z",
+        "estimated_duration_hours": 3,
+        "required_certifications": [
+          "Substation Maintenance Technician",
+          "Laboratory Dielectric Analyst"
+        ],
+        "safety_precautions": [
+          "Coordinate scheduled feeder outage window with load balancing team.",
+          "Collect fluid samples following ASTM D923 airtight syringe procedures."
+        ],
+        "switching_recommendation": "Backup feeder: SUB-EP-01 | Shed target: 0 MW",
+        "notes": "Risk Score: 9/100 | 7-Day Failure: 8.5% | DGA: Normal Dissolved Gas | Thermal Aging: 0.02× | Customers: 22,000 | Est. Outage Loss: $1.19M"
+      },
+      {
+        "priority_rank": 14,
+        "asset_id": "TX-007",
+        "asset_name": "Eastport Medical Centre Feeder Xfmr",
+        "region": "Eastport",
+        "action": "scheduled_inspection",
+        "crew_type": "maintenance",
+        "estimated_crew_size": 2,
+        "latest_start_time": "2026-09-22T08:07:53.425Z",
+        "estimated_duration_hours": 3,
+        "required_certifications": [
+          "Substation Maintenance Technician",
+          "Laboratory Dielectric Analyst"
+        ],
+        "safety_precautions": [
+          "Coordinate scheduled feeder outage window with load balancing team.",
+          "Collect fluid samples following ASTM D923 airtight syringe procedures."
+        ],
+        "switching_recommendation": "Backup feeder: SUB-ALT-EASTPORT | Shed target: 0 MW",
+        "notes": "Risk Score: 6/100 | 7-Day Failure: 6.4% | DGA: Normal Dissolved Gas | Customers: 1,200 | Est. Outage Loss: $0.06M"
+      },
+      {
+        "priority_rank": 15,
+        "asset_id": "TX-008",
+        "asset_name": "Central Valley Irrigation Pump Transformer",
+        "region": "Central Valley",
+        "action": "scheduled_inspection",
+        "crew_type": "maintenance",
+        "estimated_crew_size": 2,
+        "latest_start_time": "2026-09-22T08:07:53.425Z",
+        "estimated_duration_hours": 3,
+        "required_certifications": [
+          "Substation Maintenance Technician",
+          "Laboratory Dielectric Analyst"
+        ],
+        "safety_precautions": [
+          "Coordinate scheduled feeder outage window with load balancing team.",
+          "Collect fluid samples following ASTM D923 airtight syringe procedures."
+        ],
+        "switching_recommendation": "Backup feeder: SUB-ALT-CENTRALVALLEY | Shed target: 0 MW",
+        "notes": "Risk Score: 6/100 | 7-Day Failure: 5.6% | Weather Amplification: ×1.3 | DGA: Normal Dissolved Gas | Customers: 450 | Est. Outage Loss: $0.02M"
+      },
+      {
+        "priority_rank": 16,
+        "asset_id": "TX-005",
+        "asset_name": "Riverside Industrial Park Transformer",
+        "region": "Riverside",
+        "action": "scheduled_inspection",
+        "crew_type": "maintenance",
+        "estimated_crew_size": 2,
+        "latest_start_time": "2026-09-22T08:07:53.425Z",
+        "estimated_duration_hours": 3,
+        "required_certifications": [
+          "Substation Maintenance Technician",
+          "Laboratory Dielectric Analyst"
+        ],
+        "safety_precautions": [
+          "Coordinate scheduled feeder outage window with load balancing team.",
+          "Collect fluid samples following ASTM D923 airtight syringe procedures."
+        ],
+        "switching_recommendation": "Backup feeder: SUB-ALT-RIVERSIDE | Shed target: 0 MW",
+        "notes": "Risk Score: 4/100 | 7-Day Failure: 4.4% | Weather Amplification: ×1.3 | DGA: Normal Dissolved Gas | Customers: 3,200 | Est. Outage Loss: $0.17M"
+      }
+    ],
+    "pre_positioning_zones": [
+      {
+        "zone_id": "ZONE-001",
+        "region": "North Bay",
+        "reason": "severe storm / wind amplification; tier-1 critical asset at imminent risk",
+        "staging_location": "North Bay Regional Operations & Grid Staging Hub",
+        "assets_covered": [
+          "TX-001",
+          "LN-001",
+          "T-101",
+          "CB-001",
+          "SUB-001"
+        ],
+        "crew_count": 5,
+        "equipment": [
+          "mobile substation / bypass trailer",
+          "high-voltage switching gear",
+          "PPE class-4 arc flash suits",
+          "SF6/dielectric pump unit"
+        ],
+        "deploy_by": "2026-09-19T12:07:53.425Z"
+      },
+      {
+        "zone_id": "ZONE-002",
+        "region": "Riverside",
+        "reason": "tier-1 critical asset at imminent risk",
+        "staging_location": "Riverside Regional Operations & Grid Staging Hub",
+        "assets_covered": [
+          "TX-003",
+          "T-103",
+          "CB-002",
+          "TX-005"
+        ],
+        "crew_count": 5,
+        "equipment": [
+          "mobile substation / bypass trailer",
+          "high-voltage switching gear",
+          "PPE class-4 arc flash suits",
+          "SF6/dielectric pump unit",
+          "calibrated infrared thermography camera",
+          "portable DGA multi-gas analyser",
+          "acoustic PD detector probe",
+          "dielectric breakdown tester",
+          "ASTM D1816 oil sampler kit",
+          "sweep frequency response analyser (SFRA)",
+          "winding resistance meter",
+          "insulation resistance megohmmeter"
+        ],
+        "deploy_by": "2026-09-19T12:07:53.425Z"
+      },
+      {
+        "zone_id": "ZONE-003",
+        "region": "South Shore",
+        "reason": "severe storm / wind amplification; tier-1 critical asset at imminent risk",
+        "staging_location": "South Shore Regional Operations & Grid Staging Hub",
+        "assets_covered": [
+          "TX-006"
+        ],
+        "crew_count": 5,
+        "equipment": [
+          "mobile substation / bypass trailer",
+          "high-voltage switching gear",
+          "PPE class-4 arc flash suits",
+          "SF6/dielectric pump unit"
+        ],
+        "deploy_by": "2026-09-19T12:07:53.425Z"
+      },
+      {
+        "zone_id": "ZONE-004",
+        "region": "Central Valley",
+        "reason": "Proactive weather resilience staging",
+        "staging_location": "Central Valley Regional Operations & Grid Staging Hub",
+        "assets_covered": [
+          "TX-004",
+          "T-104",
+          "TX-008"
+        ],
+        "crew_count": 3,
+        "equipment": [
+          "ASTM D1816 oil sampler kit",
+          "sweep frequency response analyser (SFRA)",
+          "winding resistance meter",
+          "insulation resistance megohmmeter"
+        ],
+        "deploy_by": "2026-09-19T12:07:53.425Z"
+      }
+    ],
+    "total_avoided_losses_usd": 121121028,
+    "total_estimated_repair_cost_usd": 413000,
+    "return_on_maintenance_ratio": 293.3,
+    "executive_summary": "Assessment evaluated 16 grid assets across a 72-hour planning horizon. IDENTIFIED: 8 CRITICAL and 1 HIGH priority assets requiring urgent operational action. TOTAL RISK EXPOSURE: 10,96,800 customers at risk with a potential outage liability of $146.60M. BUSINESS CASE: Executing this maintenance and switching plan delivers an estimated $121.12M in avoided customer outage losses against an estimated intervention cost of $413k (Return on Maintenance Ratio: 293.3×). WEATHER IMPACT: 6 asset(s) exhibit dangerous compounding risks due to adverse regional weather forecasts — emergency pre-positioning active. IMMEDIATE ACTIONS: North Bay 230/115kV Autotransformer [Action window: 4h; DGA: High-Energy Electrical Arcing (Flashover Risk)]; Riverside 500/230kV GSU Transformer [Action window: 4h; DGA: High-Energy Electrical Arcing (Flashover Risk)]; North Bay 230kV Bus Tie Breaker [Action window: 4h; DGA: Normal Dissolved Gas]; South Shore 33/11kV Step-down Xfmr [Action window: 4h; DGA: Guarded Dissolved Gas]; North Bay 230kV Main Substation [Action window: 4h; DGA: Normal Dissolved Gas]; North Bay–Eastport 115kV Transmission Line [Action window: 4h; DGA: Normal Dissolved Gas]; North Bay 230/115kV Autotransformer [Action window: 4h; DGA: High-Energy Electrical Arcing (Flashover Risk)]; Riverside 500/230kV GSU Transformer [Action window: 4h; DGA: High-Energy Electrical Arcing (Flashover Risk)]."
+  }
 }

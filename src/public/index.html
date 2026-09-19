@@ -92,6 +92,23 @@
   <main class="main-content">
     <!-- TAB 1: Asset Risk Matrix -->
     <section id="tab-assets" class="tab-pane active">
+      <div class="simulation-controls" style="background: var(--bg-card); padding: 1rem; border-radius: 8px; margin-bottom: 1rem; border: 1px solid var(--border-color); display: flex; align-items: center; gap: 1rem; flex-wrap: wrap;">
+        <div><strong>Live Telemetry Simulator</strong></div>
+        <button class="btn btn-primary" id="sim-start-btn" onclick="controlSimulator('start')">▶ START</button>
+        <button class="btn btn-outline" id="sim-stop-btn" onclick="controlSimulator('stop')">⏹ STOP</button>
+        <div style="border-left: 1px solid var(--border-color); height: 24px; margin: 0 0.5rem;"></div>
+        <div>Presets:</div>
+        <button class="btn btn-outline" onclick="setSimulatorPreset('NORMAL')">NORMAL</button>
+        <button class="btn btn-outline" onclick="setSimulatorPreset('HEAT_WAVE')">HEAT WAVE</button>
+        <button class="btn btn-outline" onclick="setSimulatorPreset('HEAVY_RAIN')">HEAVY RAIN</button>
+        <button class="btn btn-outline" onclick="setSimulatorPreset('THUNDERSTORM')">THUNDERSTORM</button>
+        <button class="btn btn-outline" onclick="setSimulatorPreset('EXTREME_STORM')">EXTREME STORM</button>
+        <div style="flex-grow: 1;"></div>
+        <div style="font-size: 0.8rem; text-align: right; color: var(--text-muted);">
+          Status: <strong id="sim-status-label">STOPPED</strong><br/>
+          Weather: <span id="sim-weather-label">NORMAL</span>
+        </div>
+      </div>
       <div class="table-controls">
         <div class="filter-group">
           <label>Filter Region:</label>

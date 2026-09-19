@@ -13,9 +13,11 @@ import type {
   IncidentRecord,
   AssetRiskScore,
 } from "./types.js";
+import { TelemetrySimulator, WeatherPreset } from "./simulator.js";
 
 const app = express();
 const store = new GridStore();
+const simulator = new TelemetrySimulator(store);
 
 app.use(express.json());
 app.use(express.static(resolve(process.cwd(), "public")));
@@ -25,21 +27,21 @@ app.use(express.static(resolve(process.cwd(), "public")));
 export function seedSampleGrid(): void {
   const sampleAssets: AssetRecord[] = [
     {
-      asset_id: "TX-001", asset_type: "transformer", name: "North Bay 230/115kV Autotransformer",
+      asset_id: "T-101", asset_type: "transformer", name: "North Bay 230/115kV Autotransformer",
       region: "North Bay", substation_id: "SUB-NB-01", voltage_kv: 230, rated_mva: 300,
       age_years: 44, customers_served: 85000, criticality_tier: 1,
       last_maintenance_date: "2021-03-15", coordinates: { lat: 37.82, lon: -122.28 },
       backup_feed_available: true, alternate_substation_id: "SUB-NB-02",
     },
     {
-      asset_id: "TX-002", asset_type: "transformer", name: "Eastport 115/33kV Power Transformer",
+      asset_id: "T-102", asset_type: "transformer", name: "Eastport 115/33kV Power Transformer",
       region: "Eastport", substation_id: "SUB-EP-02", voltage_kv: 115, rated_mva: 120,
       age_years: 18, customers_served: 22000, criticality_tier: 2,
       last_maintenance_date: "2023-09-10", coordinates: { lat: 37.64, lon: -122.05 },
       backup_feed_available: true, alternate_substation_id: "SUB-EP-01",
     },
     {
-      asset_id: "TX-003", asset_type: "transformer", name: "Riverside 500/230kV GSU Transformer",
+      asset_id: "T-103", asset_type: "transformer", name: "Riverside 500/230kV GSU Transformer",
       region: "Riverside", substation_id: "SUB-RS-01", voltage_kv: 500, rated_mva: 600,
       age_years: 31, customers_served: 210000, criticality_tier: 1,
       last_maintenance_date: "2022-06-20", coordinates: { lat: 33.98, lon: -117.37 },
@@ -52,7 +54,7 @@ export function seedSampleGrid(): void {
       last_maintenance_date: "2020-11-01", coordinates: { lat: 37.82, lon: -122.28 },
     },
     {
-      asset_id: "TX-004", asset_type: "transformer", name: "Central Valley 115/12kV Distribution Xfmr",
+      asset_id: "T-104", asset_type: "transformer", name: "Central Valley 115/12kV Distribution Xfmr",
       region: "Central Valley", substation_id: "SUB-CV-03", voltage_kv: 115, rated_mva: 60,
       age_years: 27, customers_served: 14000, criticality_tier: 3,
       last_maintenance_date: "2022-04-05", coordinates: { lat: 36.74, lon: -119.78 },
@@ -106,18 +108,18 @@ export function seedSampleGrid(): void {
   const now = new Date().toISOString();
   const sampleReadings: SensorReading[] = [
     {
-      asset_id: "TX-001", timestamp: now,
+      asset_id: "T-101", timestamp: now,
       temperature_c: 108, vibration_mm_s: 8.9, partial_discharge_pC: 820,
       oil_quality_index: 28, load_percent: 118, tap_position: 7, dissolved_gas_ppm: 340,
       h2_ppm: 85, c2h4_ppm: 110, c2h2_ppm: 4.2, co_ppm: 620,
     },
     {
-      asset_id: "TX-002", timestamp: now,
+      asset_id: "T-102", timestamp: now,
       temperature_c: 74, vibration_mm_s: 5.2, partial_discharge_pC: 65,
       oil_quality_index: 81, load_percent: 88,
     },
     {
-      asset_id: "TX-003", timestamp: now,
+      asset_id: "T-103", timestamp: now,
       temperature_c: 103, vibration_mm_s: 6.1, partial_discharge_pC: 1150,
       oil_quality_index: 35, load_percent: 112, dissolved_gas_ppm: 610,
       h2_ppm: 210, c2h4_ppm: 95, c2h2_ppm: 6.8, co_ppm: 490,
@@ -128,7 +130,7 @@ export function seedSampleGrid(): void {
       oil_quality_index: 55, load_percent: 75,
     },
     {
-      asset_id: "TX-004", timestamp: now,
+      asset_id: "T-104", timestamp: now,
       temperature_c: 79, vibration_mm_s: 4.1, partial_discharge_pC: 95,
       oil_quality_index: 68, load_percent: 94,
     },
@@ -213,17 +215,17 @@ export function seedSampleGrid(): void {
 
   const sampleIncidents: IncidentRecord[] = [
     {
-      incident_id: "INC-2023-0041", asset_id: "TX-001", occurred_at: "2023-07-18T14:22:00Z",
+      incident_id: "INC-2023-0041", asset_id: "T-101", occurred_at: "2023-07-18T14:22:00Z",
       type: "near_miss", duration_hours: 0, customers_affected: 0,
       root_cause: "Abnormal DGA results — acetylene spike detected during routine sampling",
     },
     {
-      incident_id: "INC-2022-0087", asset_id: "TX-001", occurred_at: "2022-08-03T09:10:00Z",
+      incident_id: "INC-2022-0087", asset_id: "T-101", occurred_at: "2022-08-03T09:10:00Z",
       type: "fault", duration_hours: 3.5, customers_affected: 12000,
       root_cause: "Tap changer mechanism failure — stuck between positions",
     },
     {
-      incident_id: "INC-2024-0012", asset_id: "TX-003", occurred_at: "2024-02-11T02:45:00Z",
+      incident_id: "INC-2024-0012", asset_id: "T-103", occurred_at: "2024-02-11T02:45:00Z",
       type: "outage", duration_hours: 7.2, customers_affected: 48000,
       root_cause: "Bushing flashover following partial discharge escalation",
     },
@@ -444,6 +446,29 @@ app.post("/api/ingest-csv", (req: Request, res: Response) => {
 app.post("/api/reset", (_req: Request, res: Response) => {
   store.reset();
   res.json({ message: "Grid store reset to empty state" });
+});
+
+// ─── Simulator Endpoints ──────────────────────────────────────────────────────
+
+// POST /api/weather/update
+app.post("/api/weather/update", (req: Request, res: Response) => {
+  simulator.updateWeather(req.body);
+  res.json({ message: "Weather updated", current: simulator.currentWeather });
+});
+
+// POST /api/simulator/control
+app.post("/api/simulator/control", (req: Request, res: Response) => {
+  const { action, preset } = req.body;
+  if (action === "start") simulator.start();
+  else if (action === "stop") simulator.stop();
+  else if (action === "preset" && preset) simulator.setPreset(preset as WeatherPreset);
+  
+  res.json({ message: `Simulator action ${action} executed`, status: simulator.isRunning });
+});
+
+// GET /api/simulator/status
+app.get("/api/simulator/status", (_req: Request, res: Response) => {
+  res.json(simulator.getStatus());
 });
 
 const PORT = parseInt(process.env.PORT || "3000", 10);
